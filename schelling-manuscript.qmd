@@ -1,0 +1,116 @@
+---
+title: "Schelling Problems and Focal Points in Tacit Coordination"
+format: html
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+# Source setup script
+source("source/setup.R")
+```
+
+<!-- 
+
+QUARTER 1 vs QUARTER 2:
+
+The general format for the integrative data project is similar in both quarters, 
+but there are some important differences in content emphasis. 
+This example manuscript is models the format and requirements for Quarter 1, 
+which is considerably simpler in terms of analysis, visualization, and 
+presentation. Comments have been included to note some places where Quarter 2 
+projects will differ and where components included in this example 
+*are not required* in Quarter 1.
+
+-->
+
+
+<!--
+Q1: Literature Review
+
+1. Dynamic bibliography
+
+This example includes some dynamic citations using BibTeX and a .bib file. 
+It is not necessary to include dynamic citations or a .bib file in your data 
+projects for Quarter 1. You can choose to learn about these features on your 
+and include them if you wish to "level up" your project and potentially 
+earn a higher grade.
+
+2. Length
+
+There is no strict length requirement for the literature review in Quarter 1.
+If you are working on an ongoing project (like a thesis), you may choose to 
+include the literature review from a recent draft or proposal. If you are 
+working on a new project or an analysis just for this class, you should aim for
+about 1-2 pages (~500-1000 words) of content in the literature review.
+
+--> 
+
+Thomas Schelling introduced the concept of "focal points" in The Strategy of Conflict with the intention of expanding the contemporary perspectives of game theory to include cooperative, not just competitive, games in human decision making (Schelling, 1960). Though his work certainly proved influential in this regard, concepts of focal points and coordination games have found relevance well beyond game theory and economics as a whole. From improvisational music (Canonne, 2018) to urban planning (Rondinelli, 1983), from human-computer interfacing (Wong et al., 2009) to linguistic anthropology (Brown & Levinson, 1987), from social stereotyping (Yoon & Hollingshead, 2010) to online gaming (Ross & Collister, 2014), elements of Schelling's framework of coordinated decision-making seem ubiquitous.
+
+In this brief report, we consider focal points from a cognitive science perspective. We present data from an informal survey mimicking Schelling's early (and also quite informal) study in The Strategy of Conflict (Schelling, 1960). We discuss our findings as they relate to nonverbal communication and how these concepts may be extended to further our understanding of coordination in everyday conversation.
+
+Focal points (also called Schelling points) were first conceptualized within the field of economics. Schelling noted that by focusing on zero-sum or fully competitive behavioral scenarios, game theory had failed to account for many real-world games whose outcome rested on successful coordination, not competition, among multiple players (Schelling, 1960). In the context of coordination games, Schelling's focal points are the salient solutions that players tend to choose due to their intuitively recognizable or, more often, socially shared nature (Schelling, 1960). Critically, players tasked with coordination choose these options even in the absence of explicit communication (Mehta, Starmer, & Sugden, 1994).
+
+Since being introduced in game theory, focal points have seen broader application across the social sciences. In social psychology, focal points offer an explanation for the natural solutions individuals find in social coordination problems where multiple choices are equally valid, as individuals may rely on common expectations or cultural cues to make decisions that lead to successful coordination (Sugden, 1995). Social norms, traditions, and conventions contribute to the emergence of focal points, and they showcase how individuals rely on shared understanding to achieve coordination without explicit negotiation (Bacharach & Bernasconi, 1997). This concept sheds light on the intricate ways in which human behavior and decision-making are influenced by social context and the desire to align with others (Chwe, 2001).
+
+These principles of implicit coordination are clearly applicable to relatively broad real-life contexts, such as meeting someone in a crowded place, deciding on a meeting time without prior communication, or determining where to sit in an auditorium (Schelling, 1960). However, they may additionally apply to narrower contexts we might typically associate with explicit coordination, such as face-to-face conversation. In conversation, we use speech (or sign language) to express meaning "on-the-record," but conversational interaction consists of much more than formal language (Clark, 1996). "Off-the-record" non-linguistic signals allow interlocutors to send highly informative but implicit messages alongside explicit meaning in speech (Clark, 1996). Nonverbal resources like co-speech gesture and paralinguistic resources like intonation can serve critical pragmatic functions (McNeill, 1992). These tools can make conversation more efficient by allowing addressees to make inferences about speaker intention and meaning based on contextual cues (Clark, 1996).
+
+In the context of everyday interaction, the significance of focal points is tightly linked to common ground (Clark, 1996). In simplest terms, conversational common ground is the shared knowledge, beliefs, assumptions, and experiences that participants in a face-to-face conversation believe to be mutually understood (Clark, 1996). At one level, common ground refers to common knowledge (Stalnaker, 1978). If all interlocutors know that they have all been invited to Anna's birthday party next Saturday, they may discuss the presents they plan to bring without explicitly mentioning who Anna is, why they would be giving her presents, or the deadline for buying a present for the party (Clark & Marshall, 1981). These assumptions are localized to this group in this conversation on this topic, but there are also generalized social assumptions at play (Clark, 1996). The party-goers know that presents are given for birthdays, that both the invitees and the host will be at the party, that the presents will be given to the host at the party, that presents should be appropriate for what the host would want to receive, etc. (Clark & Marshall, 1981).
+
+Conversational common ground also encompasses emergent properties of the interaction, guided by cultural expectations and linguistic systems (Clark, 1996). The party-goers may refer to Anna as the "birthday girl" or simply "her" rather than naming her at each reference (Clark, 1996). One interlocutor may ask a question and expect to get an answer that is prompt, relevant, and truthful, given that all interlocutors are assumed to follow principles of English pragmatics and conversational organization (Grice, 1975). Common ground, both that which is present at the initiation of the conversation and that which emerges as a product of conversation, allows interlocutors to disambiguate and infer meaning with focal points (Clark, 1996). When a party-goer says, "I really hope she likes it," the listeners face multiple valid options when determining the referents of "she" and "it" (Clark, 1996). The conversation's general focus on Anna's birthday likely enables a convergence of understanding on "Anna" as the "she"; Anna is highly salient in the immediate context (Clark, 1996). Listeners will need to rely on subtler mutual salience to determine whether "it" refers to the party, some particular present, or something else entirely (Clark, 1996).
+
+## Present Study
+
+<!-- Ideally the present study section should lay out your research problem,
+specific research questions, and hypotheses. In Quarter 1, you may not have 
+these elements fully developed yet, but you should at least try to articulate 
+the general problem you are addressing and what you hope to learn from your data.
+
+The more specific you can be with your questions, the easier it will be for you
+to clearly report your results.
+-->
+
+In the present study, we do not directly probe how interlocutors use focal points in conversation. Instead, we informally replicate Schelling's first survey (Schelling, 1960). We consider both the results of our survey and of Schelling's survey to theorize how these generalized points of mutual salience may add to our understanding of the implicit coordination facilitating everyday conversation.
+
+We predicted that our survey results would largely replicate Schelling's original findings. Specifically, we expected that participants would converge on a small number of highly salient responses to the various coordination problems presented in the survey. We additionally predicted that altering the interpersonal context of the "where-and-when" meeting question would influence the specific responses given by participants, as different social relationships may afford different shared expectations and common ground.
+
+
+# Methods
+
+<!-- TODO: Confirm Schelling participants and year. -->
+
+We constructed a survey modeled after Schelling's original report. Schelling himself did not perform a true "study" in reporting his results, but rather loosely surveyed the **graduate?** students in his class at **Yale?** in **the year**. Our data collection was similarly gathered quite loosely. The survey data were collected with the intention of serving a pedagogical purpose and with no intention to be published as rigorous study. While we cannot use these data to make empirical claims, they are nonetheless a useful and thought-provoking educational tool (as Schelling's data certainly were).
+
+## Participants
+
+Participants were primarily students at the University of Chicago enrolled in courses taught by the author, where they were asked to complete the survey as part of class activities. Other participants included faculty and staff at the University of Chicago who were affiliated with the author's research lab or courses, University of Chicago alumni, and a small number of individuals not affiliated with the University of Chicago who discovered the survey online. Not all participants indicated their affiliation. In some cases, affiliations were retroactively added based on unambiguous timing of survey responses.[^For example, responses collected during the 80 minutes of an undergraduate course session were retroactively coded as "UChicago undergraduate student".]
+
+Beginning in Fall of 2023, participants were presented with optional demographic questions where they could indicate gender identity, time spent living in the US and Chicago, and languages spoken. <!-- Note any interesting patterns if they emerge from the demographics -->
+
+<!-- Participant affiliation table -->
+
+
+
+## Materials
+
+Schelling's classroom survey asked students questions challenging them to ambiguously "win" a game by coordinating with a stranger. Famously, he asked where and when the participants would meet a stranger in New York City without any prior communication. Additionally, the survey included a series of questions encouraging convergence on a response in more "game-like" circumstances: guessing a number, flipping a coin, etc.
+
+The survey in this report was in essence an abbreviated version of Schelling's. It included a selection of the "game-like" questions taken directly from Schelling's survey. We asked the classic where-and-when questions with some revisions. Because our survey was conducted at the University of Chicago, our version of the where-and-when question asked about meeting a stranger in Chicago rather than New York City. We additionally included two follow-up questions that were not included in Schelling's data, changing the interpersonal context between the participant and hypothetical partner.  
+
+<!-- description of google form hosting & link -->
+
+
+## Data Preparation
+
+Responses have been cleaned to account for predictable variations in how individuals input popular responses -- e.g., "the reg", "Regenstein", and "In the Reg." are all reported as "The Reg." Ambiguous responses (e.g., "the library") are left ambiguous.
+
+### Exclusions
+
+<!-- TODO: add inline refs for exclusion numbers & remove temporary formatting -->
+A total of <span color="red">NUMBER GOES HERE</span> responses to the "meetup location" questions were excluded (out of <span color="red">NUMBER GOES HERE</span> total) or re-coded as "Other".
+
+Responses that indicate clear misunderstanding of the question are excluded. These primarily consisted of responses in the "meeting a stranger" or "meeting a student" questions. Since these questions specify that the other party is unknown to the respondent, responses should not assume prior familiarity or experience with the other party, for example "their house", "the last place we last met", "where we usually see each other", or "where you expect them to be at a certain time."
+
+Responses to the meetup location questions were coded as "Other" if they included multiple locations without rankings (e.g., "pret or hutch"), were overly vague (e.g., "a major center within the city that everyone knows about"), or fanciful/impossible (e.g., "THE MOON!").
