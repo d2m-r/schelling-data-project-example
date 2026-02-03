@@ -1,0 +1,320 @@
+Timestamp,"You are meeting a stranger in Chicago. You both know that you need to meet each other today, but you haven't agreed on a place or a time and you have no means of communication. WHERE do you go to meet them?","You are meeting a stranger in Chicago. You both know that you need to meet each other today, but you haven't agreed on a place or a time and you have no means of communication. WHAT TIME do you go to meet them?","You are meeting another UChicago student who you have not met before. You both know that you are both UChicago students and that you should meet today somewhere in the city of Chicago, but you haven't agreed on a meeting location and you have no means of communication. Where do you go to meet them?","You are meeting your closest friend from UChicago. You both know you should meet somewhere in the city of Chicago, but you haven't agreed on a meeting location and you have no means of communication. Where do you go to meet them?","You and an anonymous partner need to choose heads or tails. If you both choose the SAME answer, you both win. Which do you choose?","You and an anonymous partner need to choose heads or tails. If you both choose DIFFERENT answers, you both win. Which do you choose?","You and an anonymous partner each give a number between 0 and 10. If you choose the same number, you both win. What number do you choose?","You and an anonymous partner each choose a number from the list below. If you choose the same number, you both win. Which number do you choose?","You and an anonymous partner each give a number. If you say the same number, you both win. The bigger the number, the more you win. What number do you choose? (your answer should contain only numerical characters; no letters, punctuation, or symbols)",Which best describes you?,OPTIONAL: Which of the following describe you? Select all that apply.,"OPTIONAL: What language do you feel most comfortable/proficient speaking? (If you consider yourself equally proficient in more than one language, list all.)",STRANGER_ERROR,STUDENT_ERROR,FRIEND_ERROR
+2020-04-21T11:05:14Z,Harper,1899-12-30T11:00:00Z,,Dollop,Heads,Tails,7,261,67,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:05:25Z,The bean,1899-12-30T10:30:00Z,,Dorms,Heads,Tails,5,13,10,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:05:45Z,Last place we met,1899-12-30T14:00:00Z,,Eckardt,Heads,Tails,1,555,100,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-21T11:06:23Z,The Bean,1899-12-30T12:00:00Z,,Max Central,Heads,Heads,7,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:06:54Z,Starbucks downtown,1899-12-30T17:00:00Z,,Our dorm building,Heads,Heads,7,7,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:07:28Z,I would meet them in front of my dorm (Campus North),1899-12-30T12:00:00Z,,In my dorm building (Campus North),Heads,Tails,5,13,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:08:20Z,Philz Coffee,1899-12-30T11:00:00Z,,In my dorm,Heads,Heads,7,99,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:08:46Z,North Residential  (or the last place we met),1899-12-30T18:00:00Z,,North Residential,Tails,Heads,7,261,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:08:51Z,UChicago Central Quad,1899-12-30T11:00:00Z,,My apartment,Heads,Tails,7,7,10000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:09:22Z,UChicago - dollop,1899-12-30T12:00:00Z,,Dollop,Heads,Heads,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:24:01Z,the bean,1899-12-30T11:00:00Z,,Lobby of Max P East,Heads,Heads,7,100,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:24:04Z,The Quad,1899-12-30T13:00:00Z,,Bartlett,Heads,Tails,7,13,22,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:24:09Z,Their house,1899-12-30T10:00:00Z,,Show up to their room,Heads,Heads,10,100,100,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-21T11:24:12Z,Reg,1899-12-30T17:00:00Z,,Reg,Tails,Heads,7,7,37,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:24:12Z,Teamo,1899-12-30T13:00:00Z,,Teamo,Heads,Tails,7,7,7,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:24:37Z,Starbucks Reserve,1899-12-30T11:00:00Z,,At their apartment,Heads,Heads,5,100,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-21T11:25:11Z,The Bean,1899-12-30T11:00:00Z,,Dollop,Heads,Heads,7,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-29T17:11:47Z,"either the home of the person I am meeting if they are not likely to come to me, or stay at my home and understand that that person will come to me",1899-12-30T17:00:00Z,,our shared apartment,Heads,Tails,7,7,999,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-29T21:04:29Z,Reg,1899-12-30T19:00:00Z,,Home,Heads,Tails,5,100,1000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-29T22:13:00Z,Burton Judson Courts,1899-12-30T12:00:00Z,,Burton Judson Courts,Tails,Heads,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T01:37:20Z,Bean,1899-12-30T12:00:00Z,,North,Heads,Tails,0,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T02:58:28Z,Magnificent Mile,1899-12-30T12:00:00Z,,Regenstein,Heads,Heads,5,100,50,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T07:19:47Z,coffee shop/restaurant next where they're staying,1899-12-30T12:30:00Z,,a coffee shop we regularly visit together,Heads,Heads,3,99,1000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T09:09:21Z,"Somewhere prominent downtown, like the Sears tower",1899-12-30T12:00:00Z,,House lounge (or his room),Heads,Heads,7,100,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T09:27:58Z,Millennium Park,1899-12-30T09:00:00Z,,The entrance of his or her dorm.,Heads,Heads,6,261,999,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T09:46:01Z,Last place i saw them,1899-12-30T18:00:00Z,,Their apartment,Heads,Heads,5,100,1000000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T10:05:06Z,the first floor of the reg,1899-12-30T14:00:00Z,,mansueto,Tails,Tails,7,7,1000000,UChicago undergraduate student,NA,NA,NA,TRUE,NA
+2020-04-30T10:07:51Z,The Regenstein,1899-12-30T17:30:00Z,,My dorm room,Heads,Tails,6,100,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T10:15:54Z,Ex Libris,1899-12-30T17:00:00Z,,Hallowed Grounds,Heads,Heads,10,100,10000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T10:30:42Z,Hutchinson Commons,1899-12-30T10:00:00Z,,Dorm Room,Heads,Tails,7,261,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T10:49:50Z,I don't go meet them.,1899-12-30T12:00:00Z,,Their apartment,Heads,Heads,NA,7,1003,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T10:58:39Z,First Floor of the reg. I am assuming we are meeting to work on school work.,1899-12-30T16:00:00Z,,Their room,Heads,Heads,5,261,100,UChicago undergraduate student,NA,NA,TRUE,TRUE,NA
+2020-04-30T10:58:48Z,the middle of the quad or the A level,1899-12-30T12:00:00Z,,The house lounge,Heads,Tails,7,7,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T11:07:04Z,"To where they live or somewhere I see them often, somewhere we run into each other frequently",1899-12-30T17:00:00Z,,ratner or baker,Heads,Tails,10,100,1000000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T11:09:14Z,Millenium Park/ Michigan Avenue,1899-12-30T16:00:00Z,,Dollop coffee,Tails,Tails,6,100,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T11:12:09Z,Their home,1899-12-30T18:00:00Z,,Logan,Heads,Heads,7,100,1000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T11:12:42Z,the quad,1899-12-30T12:00:00Z,,her room,Heads,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T11:15:22Z,the Bean!,1899-12-30T12:00:00Z,,at their room,Heads,Heads,7,7,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T11:17:06Z,Millennium Park,1899-12-30T12:30:00Z,,residential hall,Heads,Heads,5,555,999,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T11:24:43Z,Their home,1899-12-30T07:30:00Z,,Their house,Heads,Heads,5,7,100,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T11:25:18Z,Union Station,1899-12-30T10:00:00Z,,Stony Island,NA,Heads,5,100,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T11:31:08Z,At their hotel/dorm,1899-12-30T11:00:00Z,,Their house,Heads,Heads,0,100,1000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T11:37:14Z,at their home as early as possible,1899-12-30T12:00:00Z,,"Where I usually see them, at CSIL.",Heads,Heads,1,100,1000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T11:45:10Z,Meet them at your apartment.,1899-12-30T12:00:00Z,,My apartment,Heads,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T11:46:32Z,Station,1899-12-30T12:00:00Z,,Reg,Heads,Heads,5,100,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T11:46:58Z,The bean,1899-12-30T02:00:00Z,,Crerar,Heads,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T11:51:04Z,Millennium Park,1899-12-30T12:00:00Z,,Max P Central,Tails,Tails,5,99,999,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T11:58:01Z,where ever they are staying,1899-12-30T12:00:00Z,,harper cubicles,Heads,Heads,5,100,100,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T12:12:03Z,"Somewhere thats a landmark, so if I know they're in Hyde Park/campus Harper or the Reg,but if they are not associated with UChicago the Bean or something",1899-12-30T13:00:00Z,,The Lounge,Tails,Tails,5,100,50,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T12:16:33Z,where they are staying,1899-12-30T10:00:00Z,,their or my apartment,Heads,Heads,5,100,1200,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T12:26:04Z,The quad,1899-12-30T12:00:00Z,,The library,Heads,Tails,5,100,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T12:26:20Z,Downtown near the loop,1899-12-30T12:00:00Z,,Their apartment or a common hangout place,Tails,Tails,7,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T12:27:35Z,I would try to meet them outside the reg since I feel like there is a lot of traffic and likely hood that I would be able to find them.,1899-12-30T10:30:00Z,,At their dorm,Tails,Tails,7,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T12:44:11Z,The Bean,1899-12-30T12:00:00Z,,Bartlett,Heads,Heads,5,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T12:52:05Z,The Bean,1899-12-30T10:00:00Z,,My fraternity house,Heads,Heads,1,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T13:02:14Z,first floor of reg,1899-12-30T14:30:00Z,,Pret,Heads,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T13:05:24Z,Their house or apartment most likely,1899-12-30T11:00:00Z,,I would meet them at their apartment,Tails,Tails,7,261,1000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T13:16:32Z,"I would go to the place where they are staying; if they are visiting I would go to their hotel, if they are a student I would go to their apartment",1899-12-30T16:00:00Z,,I would meet them at our fraternity house,Heads,Tails,7,7,777,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T14:11:40Z,The bean,1899-12-30T12:00:00Z,,Hutch,Heads,Tails,5,555,5000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T14:15:38Z,"I would go to where we last saw each other, or I would just go to their door and knock on it, surprise them",1899-12-30T16:00:00Z,,their room,Heads,Heads,6,100,1000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T15:22:16Z,the Bean,1899-12-30T12:00:00Z,,Mine,Heads,Heads,10,100,10000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T15:33:40Z,UChicago quad,1899-12-30T12:00:00Z,,my house,Heads,Tails,5,7,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T17:11:01Z,the bean,1899-12-30T12:00:00Z,,pret,Heads,Heads,5,100,1010,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T18:54:02Z,Millennium Park,1899-12-30T12:00:00Z,,North,Heads,Heads,7,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T19:18:31Z,South (the dorm),1899-12-30T18:00:00Z,,Reg Library,Heads,Heads,1,7,10,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T20:49:10Z,Grant Park,1899-12-30T12:00:00Z,,Our apartment,Heads,Heads,7,100,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T21:55:36Z,his dorm,1899-12-30T17:00:00Z,,their dorm,Heads,Heads,10,100,1000000000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-04-30T22:29:42Z,The Reg,1899-12-30T17:00:00Z,,The Reg,Heads,Heads,10,100,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-04-30T22:40:58Z,In the lobby of their office/apartment building,1899-12-30T18:00:00Z,,In the I-house lounge,Tails,Tails,5,100,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-01T01:19:13Z,Baker at mealtime,1899-12-30T08:00:00Z,,NA,Heads,Tails,2,13,10000,UChicago undergraduate student,NA,NA,TRUE,TRUE,NA
+2020-05-01T02:47:28Z,Art Insitute,1899-12-30T13:00:00Z,,The Reg,Heads,Tails,10,100,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-01T07:05:54Z,The Bean,1899-12-30T12:00:00Z,,Her house,Heads,Heads,7,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-01T08:11:22Z,My apartment,1899-12-30T12:00:00Z,,My room,Heads,Tails,7,99,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-01T10:11:39Z,Millennium Park,1899-12-30T12:00:00Z,,My apartment,Heads,Tails,5,7,1000000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-01T11:32:01Z,Find out where they live and go meet them there in the early morning.,1899-12-30T11:00:00Z,,Meet them in their room.,Heads,Heads,7,7,1000000,UChicago undergraduate student,NA,NA,TRUE,TRUE,NA
+2020-05-01T11:52:04Z,Chicago Bean,1899-12-30T12:30:00Z,,My house within Campus North,Heads,Tails,8,100,1000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-01T13:28:06Z,a coffee shop near their place of dwelling,1899-12-30T13:00:00Z,,her apartment,Tails,Heads,7,99,7,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-01T16:33:36Z,The bean,1899-12-30T13:00:00Z,,Reg 1st floor,Heads,Heads,7,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-01T17:47:47Z,The Bean,1899-12-30T12:00:00Z,,Their dorm,Heads,Heads,5,100,99e18,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-01T18:13:19Z,Millennium Park,1899-12-30T12:00:00Z,,The Regenstein Library,Heads,Heads,10,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-01T22:30:56Z,their house/where they live,1899-12-30T12:00:00Z,,their room,Heads,Heads,7,7,100,UChicago undergraduate student,NA,NA,NA,TRUE,NA
+2020-05-02T00:14:20Z,I stay in my dorm room and wait for them to find where I live.,1899-12-30T15:00:00Z,,At the dining hall.,Heads,Heads,0,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T02:04:07Z,I house,1899-12-30T17:00:00Z,,i house,Tails,Tails,1,100,1e21,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T02:06:49Z,Bartlett Dining Commons,1899-12-30T11:00:00Z,,Max P Lobby,Heads,Heads,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T02:41:41Z,Reg,1899-12-30T10:00:00Z,,My room,Heads,Heads,0,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T09:00:57Z,NA,NA,,NA,Heads,Heads,NA,NA,NA,UChicago undergraduate student,NA,NA,TRUE,TRUE,NA
+2020-05-02T10:06:18Z,Navy Pier,1899-12-30T13:00:00Z,,Their dorm rooms,Heads,Heads,7,13,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T10:57:43Z,A coffee shop we both know,1899-12-30T15:00:00Z,,Their dorm,Heads,Tails,7,100,2000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-02T11:37:54Z,The Bean,1899-12-30T13:30:00Z,,Psi Upsilon,Heads,Heads,7,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T12:12:04Z,Pret,1899-12-30T17:00:00Z,,Trott Lounge - Campus North,Heads,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T12:14:02Z,A place where you both have been together before.,1899-12-30T12:00:00Z,,the reg,Heads,Heads,5,100,500,UChicago undergraduate student,NA,NA,TRUE,TRUE,NA
+2020-05-02T12:17:55Z,The Bean.,1899-12-30T11:00:00Z,,In front of North.,Tails,Tails,7,7,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T13:35:51Z,the Reg,1899-12-30T15:00:00Z,,stacks in the reg,Heads,Tails,7,13,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T15:59:47Z,The Bean,1899-12-30T12:00:00Z,,In front of my dorm,Heads,Tails,7,7,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T16:01:09Z,Magnificent Mile,1899-12-30T12:00:00Z,,The Reg,Heads,Tails,5,100,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T16:18:15Z,Wherever we usually see each other.,1899-12-30T13:00:00Z,,The Reg,Heads,Tails,4,13,100000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-02T17:23:42Z,where you expect them to be at a certain time,1899-12-30T12:00:00Z,,where  we most frequently meet,Heads,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-02T17:41:30Z,Regenstein Library,1899-12-30T20:00:00Z,,my apartment (roommates),Heads,Tails,7,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T17:44:37Z,UChicago campus,1899-12-30T12:30:00Z,,Dining hall,Heads,Tails,5,100,1e15,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T18:51:42Z,The Reg,1899-12-30T19:00:00Z,,Her apt,Heads,Heads,5,100,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T20:56:33Z,Union Station,1899-12-30T09:00:00Z,,Pret,Heads,Tails,1,99,999,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-02T20:56:52Z,The bean?,1899-12-30T12:00:00Z,,Our house lounge,Heads,Heads,7,7,1000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T03:56:15Z,the Bean,1899-12-30T12:00:00Z,,Plein Air Café,Heads,Heads,3,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T08:54:30Z,My home,1899-12-30T12:00:00Z,,home,Tails,Heads,7,7,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T10:42:31Z,I would meet them in the lobby of my dorm or by their room.,1899-12-30T12:00:00Z,,Their room!,Tails,Tails,5,555,5,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T10:57:05Z,The Bean,1899-12-30T12:00:00Z,,The Logan Center,Heads,Heads,5,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T11:46:34Z,"I would either go to the place where we most commonly interact, if it was close. Or i would stay home.",1899-12-30T13:00:00Z,,Their house,Heads,Heads,0,100,1000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-03T12:44:58Z,Millennium Park,1899-12-30T11:00:00Z,,Mansueto,Heads,Heads,7,100,1000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T13:25:36Z,The Bean,1899-12-30T12:00:00Z,,I'd meet them at their apartment,Heads,Heads,3,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T13:44:46Z,Reg,1899-12-30T14:00:00Z,,Reg,Heads,Tails,0,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T14:29:59Z,The Bean,1899-12-30T15:00:00Z,,The Reg,Heads,Heads,7,7,1000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T14:57:08Z,"where I know they may be, like their job or school",1899-12-30T10:00:00Z,,Their apartment,Heads,Heads,5,100,100,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-03T15:04:06Z,the quad,1899-12-30T12:00:00Z,,The reg,Heads,Heads,5,100,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T15:06:40Z,The Reg,NA,,Their Apartment,Tails,Heads,7,261,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T15:49:24Z,Clark and Lake,1899-12-30T10:00:00Z,,Reg,Heads,Heads,10,100,999,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T16:46:39Z,"The bean; if this person is in visiting Chicago, it probably seems like the most well-known ""Chicago spot.""",1899-12-30T12:30:00Z,,My apartment... hopefully he comes back.,Heads,Tails,7,100,1000000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T18:25:41Z,"Where I usually see this person (i.e in class, ratner, etc)",1899-12-30T13:00:00Z,,The reg,Tails,Tails,7,7,100,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-03T18:28:02Z,The Bean in Millennium Park,1899-12-30T12:00:00Z,,Our dormitory,Heads,Tails,7,100,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T19:24:08Z,The Med,1899-12-30T18:00:00Z,,Dorm,Heads,Tails,5,13,500,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T19:35:22Z,"meet at a starbucks but tell a mutual friend to tell them time/address, so we do not communicate directly",1899-12-30T15:00:00Z,,spot we see each other the most (reg),Heads,Tails,8,261,888,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-03T20:10:12Z,Grant Park,1899-12-30T14:00:00Z,,My apartment,Heads,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T20:34:33Z,regenstein,1899-12-30T14:00:00Z,,Quad,Heads,Heads,2,100,5,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T20:41:48Z,The reg,1899-12-30T12:00:00Z,,Cathey,Heads,Heads,7,100,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T20:55:56Z,Center of the quad,1899-12-30T12:00:00Z,,Koi Pond (Botany Pond),Heads,Heads,2,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T21:01:30Z,Sears Tower,1899-12-30T11:00:00Z,,Our apartment,Heads,Heads,7,7,7,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T21:18:30Z,The library,1899-12-30T12:00:00Z,,Outside the Bookstore,Heads,Heads,7,7,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T21:40:04Z,A Starbucks,1899-12-30T17:00:00Z,,Their apartment/dorm,Heads,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T21:44:32Z,Their house,1899-12-30T08:00:00Z,,The Reg (our usual spot),Tails,Tails,4,7,100,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-03T22:03:12Z,Millenium Park,1899-12-30T13:00:00Z,,My apartment,Heads,Tails,4,7,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T22:04:09Z,Ex Lub,1899-12-30T12:00:00Z,,Our apt,Heads,Heads,7,99,777,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T22:16:35Z,O'hare,1899-12-30T17:00:00Z,,Their apartment,Tails,Heads,7,13,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T23:34:47Z,Go to their house,1899-12-30T12:00:00Z,,Their dorm,Heads,Heads,10,100,1000000000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-03T23:38:51Z,the reg,1899-12-30T12:00:00Z,,my apartment,Tails,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-03T23:55:16Z,no idea,1899-12-30T10:00:00Z,,Reg,Heads,Tails,1,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T00:02:52Z,Where we last spoke.,1899-12-30T10:00:00Z,,My apartment (we are roommates),Tails,Tails,7,7,1000000000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-04T00:10:42Z,the bean,1899-12-30T13:30:00Z,,my apartment. he is my roomate.,Heads,Tails,7,7,420,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T01:24:10Z,Reg,1899-12-30T10:00:00Z,,Campus North,Heads,Heads,5,100,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T02:12:14Z,The Chicago Bean,1899-12-30T12:00:00Z,,The Reg,Heads,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T02:14:49Z,The Bean,1899-12-30T10:00:00Z,,Reg,Heads,Tails,5,100,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T03:07:45Z,The main quad,1899-12-30T12:00:00Z,,Regenstein Library,Heads,Heads,7,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T03:38:48Z,Their home,1899-12-30T10:00:00Z,,Their home,Tails,Heads,5,13,1000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-04T04:09:24Z,Their office or place of employment,1899-12-30T10:00:00Z,,Our apartment,Heads,Heads,5,100,1000000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-04T04:48:34Z,Cloudgate,1899-12-30T15:00:00Z,,Regenstein Library,Tails,Heads,7,99,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T08:49:59Z,The bean,1899-12-30T12:00:00Z,,my apartment,Heads,Tails,7,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T09:40:59Z,Reg first floor,1899-12-30T14:00:00Z,,Reg,Heads,Heads,7,13,8,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T09:54:00Z,The Bean,1899-12-30T12:00:00Z,,Our Apartment,Heads,Tails,0,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T09:54:27Z,NA,1899-12-30T12:00:00Z,,NA,Heads,Tails,5,100,100,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2020-05-04T10:04:19Z,Reynolds Club,1899-12-30T12:00:00Z,,Pret,Tails,Heads,3,261,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T10:12:21Z,At Milenium Park near the bean.,1899-12-30T17:00:00Z,,Outside of Max East.,Tails,Tails,5,7,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T11:21:08Z,Their house,1899-12-30T14:00:00Z,,Their room,Heads,Heads,5,100,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T11:27:25Z,The reg,1899-12-30T14:00:00Z,,Ratner Athletics Center,Tails,Heads,7,7,500,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T13:08:09Z,Sears tower,1899-12-30T13:00:00Z,,The Reg,Heads,Heads,7,7,7,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-04T19:47:53Z,I would meet them at the quad,1899-12-30T13:00:00Z,,Rockerfeller lounge,Heads,Heads,4,261,10000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2020-05-05T07:48:30Z,at their home,1899-12-30T10:00:00Z,,their home,Heads,Tails,5,7,100,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2023-02-01T15:54:20Z,the quad!,1899-12-30T10:00:00Z,,their dorm?,Heads,Heads,7,100,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-01T15:54:26Z,Millennium Park,1899-12-30T12:00:00Z,,KGB,Heads,Tails,6,100,666,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-01T15:54:56Z,Bean,1899-12-30T10:00:00Z,,Lab,Heads,Tails,9,99,999,UChicago PhD student,NA,NA,NA,NA,NA
+2023-02-01T15:55:45Z,Art Institute,1899-12-30T12:00:00Z,,Logan Square monument,Heads,Heads,0,100,100,UChicago PhD student,NA,NA,NA,NA,NA
+2023-02-01T15:55:53Z,Bean,1899-12-30T12:00:00Z,,Kgb first floor,Heads,Tails,10,555,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-01T15:56:14Z,At the bean,1899-12-30T12:00:00Z,,Prêt à manger,Heads,Tails,4,555,478,UChicago PhD student,NA,NA,NA,NA,NA
+2023-02-01T15:56:23Z,the airport,NA,,their room,Heads,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,NA,TRUE,NA
+2023-02-01T15:56:37Z,at their home,1899-12-30T10:00:00Z,,at apartment,Heads,Heads,1,7,999,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2023-02-01T15:56:56Z,Bean,1899-12-30T12:00:00Z,,KGB,Heads,Heads,5,100,100000,UChicago faculty/staff,NA,NA,NA,NA,NA
+2023-02-01T15:57:01Z,Millennium park,1899-12-30T12:00:00Z,,KGB,Heads,Tails,5,100,100,UChicago PhD student,NA,NA,NA,NA,NA
+2023-02-01T15:57:03Z,The Bean!,1899-12-30T10:00:00Z,,My office,Heads,Tails,7,100,1000000,UChicago PhD student,NA,NA,NA,NA,NA
+2023-02-02T11:06:58Z,I would meet them in an area with the most foot traffic (out of all locations in Chicago),1899-12-30T12:00:00Z,,I would meet them at their dorm (they will eventually show up there),Heads,Heads,5,7,100,UChicago faculty/staff,NA,NA,TRUE,TRUE,NA
+2023-02-02T11:09:19Z,The Chicago Bean,1899-12-30T12:00:00Z,,The Reg,Heads,Tails,5,100,1e20,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T11:09:25Z,The Bean,1899-12-30T12:00:00Z,,Fraternity house,Tails,Heads,7,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T11:09:30Z,On campus.,1899-12-30T12:00:00Z,,In his room.,Heads,Heads,10,100,1000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T11:09:43Z,A very common place or a major center within the city that everyone knows about.,1899-12-30T10:00:00Z,,At the CI and I (thats where we always end up),Tails,Tails,4,7,1000,UChicago undergraduate student,NA,NA,TRUE,NA,NA
+2023-02-02T11:09:49Z,The Bean,1899-12-30T12:00:00Z,,Their room,Heads,Heads,3,100,999,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T11:09:49Z,millenium park,1899-12-30T17:00:00Z,,their residential building,Heads,Heads,0,7,999,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T11:09:51Z,The bean,1899-12-30T14:00:00Z,,Bartlett,Heads,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T11:10:05Z,the chicago bean?,1899-12-30T12:00:00Z,,my room,Heads,Tails,7,7,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T11:10:29Z,Meet at the Bean,1899-12-30T13:00:00Z,,Woodlawn lounge,Heads,Tails,7,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T11:10:52Z,"Millenium Park, the Bean",1899-12-30T11:00:00Z,,pret,Heads,Heads,7,13,10000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T11:11:12Z,Bean,1899-12-30T02:30:00Z,,Pret,Heads,Heads,7,100,10000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T11:14:23Z,I would go to the nearest coffee spot to my home,1899-12-30T12:01:00Z,,Woodlawn dining hall,Tails,Heads,1,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T16:29:17Z,Nutella cafe/I wouldn’t go meet them,1899-12-30T12:30:00Z,,My dorm house,Heads,Heads,5,555,10000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T19:04:30Z,"I would probably go to Millenium Park because it is a big public setting. For one, it is a popular spot and it is also a huge public area so if anything bad we’re to happen people would see.",1899-12-30T15:00:00Z,,Either the crown weight room or bartlett/baker dining halls,Tails,Tails,3,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-02T20:56:34Z,The Bean.,1899-12-30T12:00:00Z,,My room,Heads,Tails,5,100,1000000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-04T11:35:45Z,THE MOON!,NA,,NA,NA,NA,2,NA,NA,UChicago undergraduate student,NA,NA,TRUE,TRUE,NA
+2023-02-05T13:55:52Z,Grant Park,1899-12-30T12:00:00Z,,The Reg,Tails,Tails,5,555,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:01:22Z,It is literally impossible,1899-12-30T12:00:00Z,,Their room,Heads,Heads,7,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:01:33Z,millenium park,1899-12-30T11:00:00Z,,the reg,Heads,Heads,6,100,12000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:02:31Z,The quad,1899-12-30T12:00:00Z,,Baker,Heads,Tails,10,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:02:41Z,The Bean,1899-12-30T01:00:00Z,,Pret,Heads,Heads,5,7,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:02:47Z,The bean,1899-12-30T12:00:00Z,,iHouse,Heads,Heads,8,13,9999,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:03:10Z,The Bean,1899-12-30T12:00:00Z,,House lounge,Heads,Heads,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:03:12Z,Chicago,1899-12-30T11:00:00Z,,Cathey,Heads,Tails,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:03:53Z,The bean,1899-12-30T11:00:00Z,,Baker dining hall,Heads,Tails,7,7,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:03:53Z,The bean,1899-12-30T12:00:00Z,,Bartlett or max p,Tails,Tails,7,100,1000000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:03:55Z,The Bean,1899-12-30T12:00:00Z,,Woodlawn,Heads,Heads,7,7,1000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:03:57Z,The Bean,1899-12-30T19:00:00Z,,My Dorm Room,Heads,Heads,7,7,5000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:05:28Z,Probably a cafe.,1899-12-30T18:00:00Z,,Dining hall,Heads,Tails,7,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:06:41Z,NA,NA,,NA,Heads,Heads,5,13,NA,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:06:49Z,Somewhere on Campus,1899-12-30T02:00:00Z,,our house lounge,Heads,Heads,7,7,10,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:07:27Z,Buckingham Fountain,1899-12-30T12:00:00Z,,Regenstein,Heads,Heads,7,7,1000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:07:29Z,Sears Tower,1899-12-30T12:00:00Z,,Beecher,Heads,Heads,7,13,1000,UChicago faculty/staff,NA,NA,NA,NA,NA
+2023-02-07T11:07:40Z,the bean,1899-12-30T12:00:00Z,,my room,Heads,Heads,7,7,7,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:07:54Z,The bean,1899-12-30T15:00:00Z,,The reg 4th floor,Heads,Heads,7,7,7777777,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:07:55Z,Millenium park,1899-12-30T12:00:00Z,,the reg,Heads,Tails,5,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:08:06Z,The Bean,1899-12-30T11:00:00Z,,Pret,Heads,Heads,7,555,1000000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:08:07Z,The Bean,1899-12-30T12:00:00Z,,Our regular spot,Heads,Heads,7,555,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:08:28Z,I would go to Depaul University's Barnes and Nobles,1899-12-30T10:00:00Z,,The reg,Heads,Tails,6,555,45,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:08:40Z,The bean,1899-12-30T18:00:00Z,,South dorm,Tails,Tails,5,555,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:08:52Z,Willis Tower,1899-12-30T12:00:00Z,,Hillel House,Heads,Tails,5,7,999999999,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:08:59Z,I would go to the bean,1899-12-30T12:00:00Z,,I go to their house,Heads,Heads,7,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:09:01Z,the bean,1899-12-30T12:00:00Z,,their dorm,Heads,Heads,0,7,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:09:01Z,community center,1899-12-30T13:00:00Z,,their room,Tails,Tails,5,555,10000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:09:08Z,Very center of Chicago,1899-12-30T12:00:00Z,,Regenstein Lobby,Heads,Heads,10,100,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:09:53Z,the bean,1899-12-30T12:00:00Z,,the regenstein library,Heads,Tails,7,7,150,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:10:03Z,millennium park,1899-12-30T12:00:00Z,,Cathey,Tails,Tails,5,7,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:10:48Z,Roosavelt Station,1899-12-30T14:00:00Z,,Their dorm room,Heads,Heads,5,261,10000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:11:02Z,Planetarium,1899-12-30T15:00:00Z,,Gates,Heads,Heads,7,7,7,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:11:07Z,River walk bridge,1899-12-30T02:00:00Z,,Cathey lounge,Heads,Heads,7,261,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T11:11:07Z,the Bean,1899-12-30T12:00:00Z,,quad,Tails,Tails,5,100,999,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T17:39:46Z,I will go meet them at the Bean.,1899-12-30T12:00:00Z,,I will meet her at Bartlett,Heads,Tails,7,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T20:00:57Z,the bean,1899-12-30T12:00:00Z,,their dorm,Heads,Heads,7,7,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-07T22:04:19Z,The Bean,1899-12-30T12:00:00Z,,Crerar,Tails,Tails,7,7,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-08T01:36:02Z,"Park (or office, depends on context)",1899-12-30T12:00:00Z,,Reg,Heads,Heads,5,100,1000000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-08T14:17:48Z,Main quad,1899-12-30T12:00:00Z,,at Woodlawn dormitory,Heads,Tails,5,100,1000,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-08T18:16:35Z,Downtown near the tallest building in Chicago.,1899-12-30T14:00:00Z,,Their room (we live in the same hall),Heads,Heads,7,13,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-02-09T02:14:43Z,The Bean!,1899-12-30T12:00:00Z,,The lobby of Woodlawn,Heads,Heads,7,13,100,UChicago undergraduate student,NA,NA,NA,NA,NA
+2023-11-03T09:26:35Z,The bean,1899-12-30T09:00:00Z,,1155,Heads,Heads,7,7,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year)",English,NA,NA,NA
+2023-11-03T09:29:07Z,Outside,1899-12-30T08:00:00Z,,Their house,Heads,Heads,4,100,9000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","New to the University of Chicago (<1 year), New to Chicago (<1 year)",NA,NA,NA,NA
+2023-11-03T09:51:18Z,the bean,1899-12-30T12:00:00Z,,my apartment,Heads,Heads,5,13,555,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year)",NA,NA,NA,NA
+2023-11-03T09:53:49Z,Cloud gate,1899-12-30T09:00:00Z,,Rockefeller memorial chapel,Heads,Tails,10,7,10000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,Chinese,NA,NA,NA
+2023-11-03T10:00:43Z,Downtown Art institute of Chicago,1899-12-30T13:00:00Z,,Joseph Regenstein Library,Heads,Heads,5,555,999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,NA,NA,NA,NA
+2023-11-03T10:19:40Z,In a coffee shop or a quiet (brunch) restaurant.,1899-12-30T11:00:00Z,,"In their apartment or in my apartment. Or any where we want, like coffee shop or restaurant.",Heads,Heads,5,100,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,Mandarin and English,NA,NA,NA
+2023-11-03T10:25:55Z,coffee shop,1899-12-30T02:00:00Z,,cafe,Heads,Heads,7,7,7,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Man, New to the University of Chicago (<1 year), New to Chicago (<1 year), New to the US (<1 year), Raised outside the US","mandarin, english, teochew",NA,NA,NA
+2023-11-03T10:38:03Z,Library,1899-12-30T14:00:00Z,,1155,Heads,Tails,3,99,99,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,NA,NA,NA,NA
+2023-11-03T11:18:27Z,South Loop,1899-12-30T08:00:00Z,,The place we always study together,Heads,Heads,7,99,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year), New to the US (<1 year), Raised outside the US",Mandarin,NA,NA,NA
+2023-11-03T11:50:43Z,Willis Tower,1899-12-30T12:00:00Z,,common spot,Heads,Heads,5,100,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,English,NA,NA,NA
+2023-11-03T12:45:29Z,art institute entrance,1899-12-30T12:00:00Z,,our apartment,Heads,Heads,6,100,1000000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",NA,NA,NA,NA,NA
+2023-11-03T13:25:27Z,Cloud Gate (the giant mirrored bean),1899-12-30T10:00:00Z,,classroom building,Heads,Tails,5,99,100000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year), Raised outside the US","Mandarin, English",NA,NA,NA
+2023-11-03T16:51:18Z,The bean,1899-12-30T11:00:00Z,,Harper cafe,Heads,Tails,4,261,999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year), Raised outside the US","English, Hindi, Gujarati",NA,NA,NA
+2023-11-04T12:13:47Z,Art institute,1899-12-30T10:00:00Z,,1155 building,Heads,Heads,5,7,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year), Raised outside the US",Chinese,NA,NA,NA
+2023-11-04T20:30:15Z,Millennium Park,1899-12-30T10:00:00Z,,Plain Air Cafe,Heads,Heads,7,100,9999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,Chinese; English,NA,NA,NA
+2023-11-05T22:48:37Z,Bean,1899-12-30T12:00:00Z,,Front door,Tails,Tails,8,7,8,Other UChicago student,Woman,English,NA,NA,NA
+2023-11-06T16:20:43Z,To a place we talked about the most before agreeing to meet,1899-12-30T10:00:00Z,,Our normal meeting place,Heads,Heads,7,7,5555,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year)",NA,NA,NA,NA
+2023-11-07T10:35:34Z,The bean (if it wasn’t still under construction),1899-12-30T12:00:00Z,,My apartment,Heads,Tails,7,7,1000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year)",English,NA,NA,NA
+2024-01-09T14:16:03Z,The bean,1899-12-30T12:00:00Z,,Kelly Beecher Green,Heads,Heads,6,100,100000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Man,"Chinese, English",NA,NA,NA
+2024-11-01T13:24:08Z,Near the riverwalk,1899-12-30T14:00:00Z,,any coffee shop on campus,Heads,Heads,5,100,1000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year), Raised outside the US",Chinese/English,NA,NA,NA
+2024-11-01T14:28:09Z,Insomnia Cookies,1899-12-30T14:00:00Z,,Insomnia Cookies,Heads,Tails,5,555,999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,NA,NA,NA,NA
+2024-11-01T14:32:46Z,University of Chicago,1899-12-30T10:00:00Z,,Starbucks,Heads,Tails,7,555,999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year)","English, Korean",NA,NA,NA
+2024-11-01T14:39:37Z,A coffee shop,1899-12-30T10:30:00Z,,MAPSS student lounge,Heads,Tails,10,100,100000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,NA,NA,NA,NA
+2024-11-01T14:44:31Z,The Bean,1899-12-30T22:00:00Z,,Harper Library,Heads,Heads,7,7,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Man, New to the University of Chicago (<1 year), New to Chicago (<1 year), Raised outside the US","English, French",NA,NA,NA
+2024-11-01T14:54:39Z,Trump Tower,1899-12-30T08:30:00Z,,Regenstein Library,Heads,Tails,5,99,99,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,Mandarin,NA,NA,NA
+2024-11-01T14:58:29Z,The Bean,1899-12-30T12:00:00Z,,"where he proposed to me, overlooking Robie House",Heads,Tails,7,7,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year)",English,NA,NA,NA
+2024-11-01T15:00:14Z,Bean,1899-12-30T12:00:00Z,,social work,Heads,Tails,7,7,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year)",Spanish and English,NA,NA,NA
+2024-11-01T15:21:19Z,Cafeteria,1899-12-30T10:00:00Z,,Her apartment,Heads,Heads,0,99,1000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), Raised outside the US",NA,NA,NA,NA
+2024-11-01T15:32:40Z,Navy Pier,1899-12-30T09:00:00Z,,UChicago Bookstore,Heads,Heads,0,7,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,NA,NA,NA,NA
+2024-11-01T16:21:48Z,Cloudgate,1899-12-30T15:30:00Z,,The University Bookstore,Heads,Heads,5,555,999999999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,English,NA,NA,NA
+2024-11-01T17:34:50Z,Millennium Park,1899-12-30T12:00:00Z,,Our lab,Heads,Heads,8,100,10000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,Mandarin,NA,NA,NA
+2024-11-01T17:35:06Z,Chicago subway station,1899-12-30T12:00:00Z,,Grounds of Being,Heads,Heads,5,555,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year), New to the US (<1 year), Raised outside the US",Mandarin,NA,NA,NA
+2024-11-01T17:45:19Z,millennium park,1899-12-30T11:30:00Z,,library,Heads,Heads,5,100,999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,NA,NA,NA,NA
+2024-11-01T18:12:36Z,the bean,1899-12-30T12:00:00Z,,main quad,Heads,Heads,7,555,1500,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year)",English,NA,NA,NA
+2024-11-01T19:00:19Z,The Mansueto Library,1899-12-30T09:30:00Z,,"The Graduate Lounge in 1155 Building, 2nd floor",Heads,Heads,7,555,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year), New to the US (<1 year), Raised outside the US",Mandarin,NA,NA,NA
+2024-11-01T20:33:32Z,Millennium Park,1899-12-30T11:00:00Z,,Reg Library,Heads,Heads,5,100,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,NA,NA,NA,NA
+2024-11-01T21:31:52Z,La Serre,1899-12-30T18:00:00Z,,Starbucks,Tails,Heads,6,13,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year), New to the US (<1 year), Raised outside the US",Chinese,NA,NA,NA
+2024-11-02T00:45:34Z,In front of Reg,1899-12-30T10:00:00Z,,"Still, in front of Reg",Heads,Heads,5,100,100000000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Man, New to Chicago (<1 year)","Mandarin, Japanese, English",NA,NA,NA
+2024-11-02T10:08:45Z,their house,1899-12-30T12:00:00Z,,her house,Heads,Heads,7,100,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year), Raised outside the US",NA,NA,NA,NA
+2024-11-02T10:21:50Z,The Bean,1899-12-30T13:00:00Z,,The pub,Heads,Heads,5,261,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Man, New to the University of Chicago (<1 year), New to Chicago (<1 year)",English,NA,NA,NA
+2024-11-02T10:32:28Z,Restaurant,1899-12-30T05:19:59Z,,Library,Heads,Tails,5,100,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year), New to the US (<1 year)",Mandarin,NA,NA,NA
+2024-11-02T11:15:34Z,I am not planning going out since I don't now where and when to go.,NA,,campus,Heads,Heads,0,261,0,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year), Raised outside the US",mandarin Chinese,TRUE,TRUE,TRUE
+2024-11-02T17:37:46Z,The Bean,1899-12-30T12:00:00Z,,Hallowed Grounds,Heads,Tails,10,100,1000000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Man,"Spanish, French, English",NA,NA,NA
+2024-11-03T12:38:14Z,The bean,1899-12-30T12:00:00Z,,Psych dept,Heads,Heads,10,100,1000000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Man,English,NA,NA,NA
+2024-11-03T13:31:35Z,center of the Chicago,1899-12-30T12:00:00Z,,the Uchicago Quad,Heads,Heads,0,261,0,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,Chinese,NA,NA,NA
+2024-11-03T14:42:28Z,millennium park,1899-12-30T09:30:00Z,,regenstein library,Heads,Tails,10,100,1000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year)",Chinese and English,NA,NA,NA
+2024-11-03T15:02:36Z,Cafe near me,1899-12-30T11:30:00Z,,After class,Heads,Heads,7,13,988,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year)",NA,NA,NA,NA
+2024-11-03T17:20:28Z,The Bean,1899-12-30T12:00:00Z,,Go to their house,Heads,Heads,5,261,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,NA,NA,NA,NA
+2024-11-03T23:27:32Z,The Millennium Park,1899-12-30T13:00:00Z,,Plein air cafe,Heads,Heads,10,99,9999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year), New to Chicago (<1 year), Raised outside the US",Mandarin,NA,NA,NA
+2024-11-04T14:28:19Z,Hyde Park,1899-12-30T13:00:00Z,,Perspective class room,Heads,Heads,5,100,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,Chinese,NA,NA,NA
+2024-11-04T16:26:01Z,DuSable Bridge,1899-12-30T12:00:00Z,,Main Quadrangle,Heads,Heads,5,100,100,UChicago undergraduate student,Man,Chinese,NA,NA,NA
+2024-11-04T21:32:02Z,Rockefeller Memorial Chapel,1899-12-30T12:00:00Z,,1155 E 60th St,Heads,Tails,8,99,999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,"English, Chinese",NA,NA,NA
+2024-11-05T00:34:23Z,Industry Museum,1899-12-30T13:00:00Z,,Mapss,Heads,Heads,3,99,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,Chinese,NA,NA,NA
+2024-11-05T09:52:32Z,the bean,1899-12-30T13:00:00Z,,the museum of science and industry,Heads,Heads,1,100,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Man, New to the University of Chicago (<1 year), New to Chicago (<1 year), New to the US (<1 year), Raised outside the US","English,Arabic",NA,NA,NA
+2024-11-17T11:22:14Z,The bean,1899-12-30T12:00:00Z,,Jimmy's Pub,Heads,Tails,7,7,1000000,UChicago PhD student,Woman,English,NA,NA,NA
+2025-02-11T13:22:01Z,The Bean,1899-12-30T12:00:00Z,,NA,Heads,Heads,10,7,100,Not affiliated with UChicago,"Woman, Never been part of the UChicago campus/community",English,NA,NA,NA
+2025-03-27T22:32:59Z,middle of the main quad,1899-12-30T10:00:00Z,,Village Tap,Heads,Heads,9,99,0,UChicago faculty/staff,Man,English,NA,NA,NA
+2025-03-28T09:21:43Z,public,1899-12-30T12:30:00Z,,pret a manger,Tails,Heads,7,99,1000000,UChicago faculty/staff,"Man, New to Chicago (<1 year), New to the University of Chicago (<1 year)",English,NA,NA,NA
+2025-10-31T17:17:40Z,South loop,1899-12-30T09:00:00Z,,1155 student lounge,Heads,Tails,7,7,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",NA,NA,NA,NA,NA
+2025-11-01T10:55:28Z,Wills Tower,1899-12-30T10:00:00Z,,My friend's place (e.g. apartment),Heads,Heads,10,7,1000000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to Chicago (<1 year), New to the University of Chicago (<1 year)","Chinese, English",NA,NA,NA
+2025-11-01T13:40:58Z,Buckingham Fountain,1899-12-30T12:00:00Z,,Common area in the 1155 building,Tails,Heads,7,261,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year)",English,NA,NA,NA
+2025-11-02T00:08:11Z,A place we both know like the memorial park,1899-12-30T10:00:00Z,,UChicago library,Heads,Tails,5,555,99999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Man, New to Chicago (<1 year), New to the University of Chicago (<1 year)",Chines mandarin,TRUE,NA,NA
+2025-11-02T08:51:53Z,The Bean,1899-12-30T11:30:00Z,,My home,Heads,Tails,5,100,999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, Raised outside the US, New to Chicago (<1 year), New to the University of Chicago (<1 year)",Chinese,NA,NA,NA
+2025-11-02T17:03:28Z,the bean,1899-12-30T12:00:00Z,,stuart hall cubicles,Tails,Tails,7,7,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Man,"english, spanish",NA,NA,NA
+2025-11-02T17:31:52Z,the bean,1899-12-30T09:00:00Z,,Chicago Booth Harper Center,Heads,Heads,5,100,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",NA,NA,NA,NA,NA
+2025-11-02T17:37:11Z,the bean,1899-12-30T12:00:00Z,,regenstein,Heads,Heads,5,100,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Non-binary or other gender identity, New to Chicago (<1 year), New to the University of Chicago (<1 year)",English,NA,NA,NA
+2025-11-02T17:59:43Z,bean,1899-12-30T09:00:00Z,,jimmys,Heads,Heads,10,100,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to Chicago (<1 year), New to the University of Chicago (<1 year)",english,NA,NA,NA
+2025-11-03T16:47:59Z,The park,1899-12-30T15:00:00Z,,Philz,Heads,Tails,7,7,107,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year)",English,NA,NA,NA
+2025-11-03T20:59:37Z,Their house,1899-12-30T12:00:00Z,,Plein air,Heads,Heads,2,555,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,English,TRUE,TRUE,NA
+2025-11-06T11:43:06Z,cafes,1899-12-30T13:30:00Z,,Library,Tails,Heads,3,555,1000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,Chinese,NA,NA,NA
+2025-11-07T17:23:48Z,Dining Hall,1899-12-30T17:00:00Z,,Harris School of Public Policy,Heads,Heads,6,100,666,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Man,mandarin Chinese,NA,NA,NA
+2025-11-07T18:45:14Z,Millennium Station,1899-12-30T12:00:00Z,,UChicago Bookstore,Heads,Tails,1,7,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Man, New to Chicago (<1 year), New to the University of Chicago (<1 year)",NA,NA,NA,NA
+2025-11-07T20:56:40Z,The bean,1899-12-30T12:00:00Z,,1155 Building,Heads,Tails,7,100,999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to Chicago (<1 year), New to the University of Chicago (<1 year)","English, Japanese",NA,NA,NA
+2025-11-07T22:07:55Z,Millennium Park,1899-12-30T14:00:00Z,,Millennium Park,Heads,Heads,6,100,6,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to Chicago (<1 year), New to the University of Chicago (<1 year)",Mandarin Chinese,NA,NA,NA
+2025-11-08T14:14:09Z,LAKE,1899-12-30T19:00:00Z,,DOWNTOWN,Heads,Heads,8,99,1000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,ENGLISH,NA,NA,NA
+2025-11-08T14:36:22Z,I will not go,1899-12-30T15:00:00Z,,Their home,Heads,Heads,10,100,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,Mandarin,NA,NA,NA
+2025-11-08T14:51:40Z,bean,1899-12-30T12:00:00Z,,gold coast,Heads,Heads,7,99,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,english,NA,NA,NA
+2025-11-08T15:12:04Z,in front of the art museum,1899-12-30T12:00:00Z,,plein air cafe,Heads,Tails,7,555,99,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",NA,NA,NA,NA,NA
+2025-11-11T15:36:51Z,Millenium Park,1899-12-30T12:00:00Z,,Our dorm building.,Heads,Heads,10,100,9999999999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",NA,NA,NA,NA,NA
+2025-11-11T15:37:37Z,millennium station,1899-12-30T12:00:00Z,,the reg,Heads,Heads,7,555,67,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,english,NA,NA,NA
+2025-11-11T15:37:54Z,The Bean,1899-12-30T12:00:00Z,,Lobby of our building,Heads,Heads,5,100,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,English,NA,NA,NA
+2025-11-11T15:37:59Z,Library,1899-12-30T03:30:00Z,,Restaurant,Tails,Tails,7,100,666666,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Man,Chinese,NA,NA,NA
+2025-11-11T15:38:28Z,the bean,1899-12-30T13:00:00Z,,Raising Cane's,Heads,Tails,7,99,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,NA,NA,NA,NA
+2025-11-11T15:38:43Z,Trump building,1899-12-30T10:00:00Z,,My apartment,Heads,Heads,0,99,999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to Chicago (<1 year), New to the University of Chicago (<1 year)",Mandarin,NA,NA,NA
+2025-11-11T15:38:48Z,The bean!,1899-12-30T17:30:00Z,,Reg,Heads,Heads,10,7,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,English,NA,NA,NA
+2025-11-11T15:39:24Z,The bean,1899-12-30T12:00:00Z,,The reg,Heads,Heads,8,13,10000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Non-binary or other gender identity, New to Chicago (<1 year), New to the University of Chicago (<1 year)",English,NA,NA,NA
+2025-11-11T15:39:31Z,UChicago library,1899-12-30T09:00:00Z,,My apartment,Heads,Heads,5,99,1000000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Man, New to the University of Chicago (<1 year)",Mandarin and English,NA,NA,NA
+2025-11-11T15:39:31Z,The Bean,1899-12-30T12:00:00Z,,UChicago Bookstore,Heads,Tails,2,555,1000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Man, Non-binary or other gender identity, New to Chicago (<1 year), New to the University of Chicago (<1 year)","Portuguese, English",NA,NA,NA
+2025-11-11T15:39:44Z,the beans,1899-12-30T12:00:00Z,,my home,Heads,Heads,5,100,0,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Man, New to the University of Chicago (<1 year)",NA,NA,NA,NA
+2025-11-11T15:39:58Z,The Bean,1899-12-30T12:00:00Z,,Building 1155,Heads,Heads,10,100,100,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to Chicago (<1 year), New to the University of Chicago (<1 year)","English, Vietnamese",NA,NA,NA
+2025-11-11T15:40:24Z,"If they are flying into the city, I would meet them at the airport. If they already live in chicago, I would go to a popular tourist location.",1899-12-30T12:00:00Z,,at a cafe on campus or in the city that meets our vibe,Heads,Tails,7,13,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, New to the University of Chicago (<1 year)",english,NA,NA,NA
+2025-11-11T15:41:19Z,Campus,1899-12-30T14:00:00Z,,Home,Heads,Heads,1,100,1000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,Chinese,NA,NA,NA
+2025-11-11T15:41:31Z,Cloud Gate,1899-12-30T01:30:00Z,,Biopsychological building,Heads,Heads,0,99,99999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, Raised outside the US, New to Chicago (<1 year), New to the University of Chicago (<1 year)",Chinese,NA,NA,NA
+2025-11-11T15:42:44Z,Bean,1899-12-30T12:00:00Z,,Trader joes,Heads,Tails,0,100,1000000,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)",Woman,NA,NA,NA,NA
+2025-11-11T15:44:17Z,Campus,1899-12-30T13:00:00Z,,NEMA,Heads,Heads,5,100,999999999999999,"UChicago MA student (e.g., MAPSS, MACSS, Harris/Crown MA)","Woman, Raised outside the US, New to Chicago (<1 year), New to the University of Chicago (<1 year)",Mandrain,NA,NA,NA
