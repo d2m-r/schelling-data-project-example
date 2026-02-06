@@ -8,6 +8,7 @@ format: html
 #| include: false
 
 # Source setup script
+source("source/functions.R")
 source("source/setup.R")
 ```
 
@@ -114,3 +115,4 @@ A total of <span color="red">NUMBER GOES HERE</span> responses to the "meetup lo
 Responses that indicate clear misunderstanding of the question are excluded. These primarily consisted of responses in the "meeting a stranger" or "meeting a student" questions. Since these questions specify that the other party is unknown to the respondent, responses should not assume prior familiarity or experience with the other party, for example "their house", "the last place we last met", "where we usually see each other", or "where you expect them to be at a certain time."
 
 Responses to the meetup location questions were coded as "Other" if they included multiple locations without rankings (e.g., "pret or hutch"), were overly vague (e.g., "a major center within the city that everyone knows about"), or fanciful/impossible (e.g., "THE MOON!").
+
