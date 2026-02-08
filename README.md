@@ -6,6 +6,8 @@ This repo serves as an example of a complete Quarto project that imports, cleans
 
 Students can use this as a model of how to structure their own data projects in R and/or GitHub, and specifically how to meet the requirements of the D2M-R I Integrative Data Project assignment.
 
+**As of Feb 8 2026 this repo is still in development. It does not currently meet all requirements.**
+
 Importantly, this is by no means intended to present reliable, rigorous data or to make any contribution to any literature whatsoever. Instead, this is intended to be an interactive exercise for two contexts:
 
 1. Introducing students to concepts around non-verbal communication, cooperative interaction, tacit coordination, etc.
