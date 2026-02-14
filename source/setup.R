@@ -21,10 +21,14 @@ raw_colnames <- c("timestamp",
 # Read in raw survey responses
 raw_responses <- read_sheet("https://docs.google.com/spreadsheets/d/1T4XEXNxmb3jK2WenIR9vRXggT_-_8HDejP0J3qeXFqM/edit?usp=sharing", 
                             sheet = 1,
-                            skip = 1, # ignore sheet headers (=question wording)
-                            # col_types = "TcTccffdddfLLlll", # factor not yet implemented
-                            col_types = "TcTccccdddcLLlll",
-                            col_names = raw_colnames)
+                            skip = 1, # ignore sheet headers (=full/long question wording)
+                            # col_types = "TcTccffdddfLLlll", # factor not yet implemented, lists not yet workable
+                            col_types = "TcTccccdddccclll",
+                            col_names = raw_colnames) |> 
+    # Add ID column
+    mutate(id = row_number()) |> 
+    # Reorder columns to put ID first
+    select(id, everything())
 
 ############# LOCAL DATA ################
 
@@ -34,12 +38,10 @@ raw_responses <- read_sheet("https://docs.google.com/spreadsheets/d/1T4XEXNxmb3j
 
 # Write out a local copy of the raw responses
 # Uncomment to update the local file
-# write_csv(raw_responses, "data/raw_responses.csv")
+# write_csv(raw_responses, "data/raw-responses.csv")
 
 # Uncomment to read in the most recent snapshot file
 # col_names will already match raw_colnames
 # col_types will need to be specified
-#raw_responses <- read_csv("data/raw_responses.csv",
-#                          col_types = "TcTccccdddcLLlll",)
-
-
+# raw_responses <- read_csv("data/raw-responses.csv",
+#                          col_types = "dTcTccccdddcLLlll")
