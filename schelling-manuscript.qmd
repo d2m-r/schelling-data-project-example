@@ -183,10 +183,204 @@ Responses have been cleaned to account for predictable variations in how individ
 
 ### Exclusions
 
+```{r}
+#| label: exclusions
+
+# Count non-empty responses totalled across the three `where_` columns
+total_where_responses <- 
+    sum(!is.na(raw_responses$where_stranger)) + 
+    sum(!is.na(raw_responses$where_student)) + 
+    sum(!is.na(raw_responses$where_friend))
+
+# Count number of responses marked as errors in the three `error_` columns
+error_responses <-
+    sum(!is.na(raw_responses$error_stranger)) +
+    sum(!is.na(raw_responses$error_student)) +
+    sum(!is.na(raw_responses$error_friend))
+
+## OTHER COUNTS WILL GO HERE ONCE THE SCRIPT ACTUALLY DOES THAT
+        
+```
+
 <!-- TODO: add inline refs for exclusion numbers & remove temporary formatting -->
-A total of <span color="red">NUMBER GOES HERE</span> responses to the "meetup location" questions were excluded (out of <span color="red">NUMBER GOES HERE</span> total) or re-coded as "Other".
+Of the `r total_where_responses` total responses to the three "meetup location" questions, `r error_responses` were excluded and <span color="red">NUMBER GOES HERE</span> were re-coded as "Other".
 
 Responses that indicate clear misunderstanding of the question are excluded. These primarily consisted of responses in the "meeting a stranger" or "meeting a student" questions. Since these questions specify that the other party is unknown to the respondent, responses should not assume prior familiarity or experience with the other party, for example "their house", "the last place we last met", "where we usually see each other", or "where you expect them to be at a certain time."
 
 Responses to the meetup location questions were coded as "Other" if they included multiple locations without rankings (e.g., "pret or hutch"), were overly vague (e.g., "a major center within the city that everyone knows about"), or fanciful/impossible (e.g., "THE MOON!").
+
+## Results
+
+<!-- 
+
+Reporting and visualizing the responses for the 4 meeting questions require more advanced 
+techniques than covered in D2M-R I, so the following sections are left blank for now.
+
+There are the most interesting part of the survey, so I'll add these in later to give more
+examples of creative use of the tools, but for now just keep it simple!
+
+-->
+
+Results are reported by individual item. Exact wording of each item is provided before reporting the results. For the "where-to-meet" questions, results are reported separately by interpersonal context (stranger, student, friend).
+
+### Meeting Time
+
+
+### Meeting Locations
+
+
+
+### Coin Flip
+
+```{r}
+#| label: coin-flip-data-prep
+
+coins <- raw_responses |> 
+    select(coin_same, coin_different) |> 
+    drop_na() |> 
+    pivot_longer(
+        cols = c(coin_same, coin_different), 
+        names_to = "goal", 
+        names_prefix = "coin_", 
+        values_to = "side") |> 
+    mutate(goal = fct_recode(goal, 'Choose same' = "same", 'Choose different' = "different") |> fct_rev())
+
+```
+
+You and an anonymous partner need to choose heads or tails.
+
+**Task 1:** If you both choose the _SAME_ answer, you both win. Which do you choose?
+
+**Task 2:** If you both choose _DIFFERENT_ answers, you both win. Which do you choose?
+
+```{r}
+#| label: tbl-coin-flip-results
+#| tbl-cap: "Proportional frequency table of responses to coin flip questions, separated by task (same vs different)."
+
+# Create simple proportional frequency table of results of coin flip tasks
+
+# 1) make the percent table
+coin_flip_tab <-
+  table(coins$side, coins$goal) |>
+  prop.table(margin = 2) |>
+  addmargins(margin = 1) |>
+  round(3) * 100
+
+## STOP HERE FOR A SIMPLE, PRINTABLE PROPORTIONS TABLE
+## OR CONTINUE TO FORMAT AS A FLEXTABLE FOR PRETTIER MANUSCRIPT TABLES
+
+# 2) convert to a data frame for flextable
+coin_flip_df <- as.data.frame.matrix(coin_flip_tab)
+coin_flip_df <- rownames_to_column(coin_flip_df, "Side")
+
+# 3) print
+coin_flip_df |>
+  flextable() |>
+  colformat_num(j = -1, digits = 1, suffix = "%", big.mark = "")
+
+```
+
+
+```{r}
+#| label: fig-coin-flip-filled-bar
+
+# filled bar plot showing distribution of responses to the coin flip questions, separated by task (same vs different)
+
+ggplot(coins,
+    aes(x = goal, fill = side)) +
+    geom_bar(position = "fill") +
+    labs(x = "Task Goal", y = "% Responses", fill = "Coin Side") +
+    theme_minimal()
+
+```
+
+
+When participants were prompted to choose the same answer as their partner, the responses were highly skewed: `r sum(coins$side == "Heads" & coins$goal == "Choose same")` out of `r sum(coins$goal == "Choose same")` (`r coin_flip_tab["Heads", "Choose same"]`%) chose heads. When participants were prompted to choose a different answer than their partner, the results were more balanced: `r sum(coins$side == "Heads" & coins$goal == "Choose different")` out of `r sum(coins$goal == "Choose different")` (`r coin_flip_tab["Heads", "Choose different"]`%) chose heads. These trends are in line with Schelling's original findings.
+
+### Guessing a Number
+
+```{r}
+#| label: number-data-prep
+
+numbers <- raw_responses |> 
+    select(number_0_10, number_list, number_big) |> 
+    mutate(
+        # Convert the first 2 to ordered factors
+        number_0_10 = factor(number_0_10, ordered=T),
+        number_list = factor(number_list),
+        # Add a new factored version of the big number question
+        # to retain the free response text
+        number_big_fct = factor(number_big, ordered=T)) |> 
+    na.omit()
+```
+
+You and an anonymous partner must choose a number. In each scenario, you both win if you match your partner's number.
+
+**Task 1:** Pick a number 0-10.
+
+```{r}
+#| label: fig-number-0-10-bar
+#| fig-cap: "Distribution of responses to the 'pick a number 0-10' task."
+
+ggplot(numbers, aes(x=number_0_10, fill=number_0_10)) + 
+    geom_bar() +
+    #theme_minimal() +
+    labs(#title="Match an anonymous partner: select 0-10",
+         y=element_blank(),
+         x=element_blank()) +
+    theme(axis.text.x = element_text(size=24),
+          legend.position = "none") #+
+    #scale_fill_futurama()
+```
+
+```{r}
+#| label: number-0-10-results
+
+
+# Count non-empty responses
+total_responses_0_10 <- sum(!is.na(numbers$number_0_10))
+
+# Which levels in the number_0_10 factor are most common?
+
+choices_0_10 <- numbers$number_0_10 |> 
+    fct_count() |> # count the number of responses for each level of the factor
+    arrange(desc(n)) # arrange in descending order of count
+
+first_choice_0_10 <- choices_0_10 |>
+    slice(1) # slice the first row to get the FIRST most common response
+
+second_choice_0_10 <- choices_0_10 |>
+    slice(2) # slice the first row to get the SECOND most common response
+
+```
+
+
+<!-- TODO: add inline reporting of the most common responses and their proportions --> 
+
+In selecting from an incremental set of integers, participants most frequently chose the number 7 (...), which was also the most frequently chosen number in Schelling's original survey. This number is often cited as a classic example of a Schelling point, as it is the most salient option in this set of choices.
+
+
+**Task 2:** Pick a number from the list^[Participants were presented with the following list of numbers in a randomized order: 
+`r levels(numbers$number_list)`.] below.
+
+
+```{r}
+#| label: fig-number-list-bar
+#| fig-cap: "Distribution of responses to the 'pick a number from the list' task."
+
+ggplot(numbers, aes(x=number_list, fill=number_list)) + 
+    geom_bar() +
+    #theme_minimal() +
+    labs(#title="Match an anonymous partner: select from a list",
+         y=element_blank(),
+         x=element_blank()) +
+    theme(axis.text.x = element_text(size=24),
+          legend.position = "none") #+
+    #scale_fill_futurama()
+```
+
+
+**Task 3:** Pick any number. You win if you match your partner, *and* the bigger the number, the more you both win.
+
+
 

@@ -6,7 +6,7 @@ This repo serves as an example of a complete Quarto project that imports, cleans
 
 Students can use this as a model of how to structure their own data projects in R and/or GitHub, and specifically how to meet the requirements of the D2M-R I Integrative Data Project assignment.
 
-**As of Feb 8 2026 this repo is still in development. It does not currently meet all requirements.**
+**As of Feb 8 2026 this repo is still in development. It does not currently meet all requirements.** Additionally, students should note that some code in this repo is considerably more complex that what is expected for the D2M-R I assignment. The intention is to provide many varied examples of how to use R, tidyverse functions, and Quarto to produce a dynamic report. D2M-R I students are not expected to be able to understand or reproduce all code in this repo! Refer to the learning objective expectations on the website to ensure your code meets the requirements. Remember that in the integrative project you are only required to show the skills at a **4** level.
 
 Importantly, this is by no means intended to present reliable, rigorous data or to make any contribution to any literature whatsoever. Instead, this is intended to be an interactive exercise for two contexts:
 
