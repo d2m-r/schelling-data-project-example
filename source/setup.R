@@ -34,12 +34,12 @@ raw_responses <- read_sheet("https://docs.google.com/spreadsheets/d/1T4XEXNxmb3j
 
 # Write out a local copy of the raw responses
 # Uncomment to update the local file
-# write_csv(raw_responses, "source/raw_responses.csv")
+# write_csv(raw_responses, "data/raw_responses.csv")
 
 # Uncomment to read in the most recent snapshot file
 # col_names will already match raw_colnames
 # col_types will need to be specified
-#raw_responses <- read_csv("source/raw_responses.csv",
+#raw_responses <- read_csv("data/raw_responses.csv",
 #                          col_types = "TcTccccdddcLLlll",)
 
 
