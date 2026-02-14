@@ -32,16 +32,15 @@ kbg <- "kelly|beecher|kbg" # You might want to define groups that could be usefu
 
 
 
-######### filter_errors() ###########
-
-
 # Clean any of the meetup location response columns, collapse as directed, 
 # and filter out clear errors
 
+######### filter_errors() ###########
+
 # data : data frame containing raw survey responses
-# colName : name of column containing meetup location responses to be cleaned -- TEMP REMOVED FOR SIMPLICITY
-# colErr : name of corresponding boolean column that indicates whether 
-# response has been manually marked as an error
+# ~~colName~~ : name of column containing meetup location responses to be cleaned -- TEMP REMOVED FOR SIMPLICITY
+# colErr : (string) name of corresponding boolean column that indicates whether 
+#          response has been manually marked as an error
 
 filter_errors <- function(data, colErr="") {
     # if error column is provided
@@ -56,7 +55,12 @@ filter_errors <- function(data, colErr="") {
     return(data)
 }
 
-filter_errors(raw_responses, "error_stranger")
+## Test
+# filter_errors(raw_responses, "error_stranger")
 
 
 ######### meetup_cleanup() ###########
+
+
+
+

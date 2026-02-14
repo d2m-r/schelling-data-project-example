@@ -86,7 +86,7 @@ demographics <- demographics |>
     mutate(identities = str_trim(identities))
 
 ### CLEAN & SEPARATE LANGUAGES
-## Languages was free response, so it requires some cleaning and consistency
+## `languages` was free response, so it requires some cleaning and consistency
 
 demographics <- demographics |> 
     # create consistent delimiter for languages
@@ -103,8 +103,8 @@ demographics <- demographics |>
     # Also account for observed typos ("chines" and "mandrain")
     mutate(languages = case_when(
         str_detect(languages, "chines|mandrain") ~ "mandarin",
-        TRUE ~ languages
-    ))
+        TRUE ~ languages) |> factor()
+    )
 
 # Confirm unique languages are clean
 # unique(demographics$languages)
@@ -122,10 +122,11 @@ demographics <- demographics |>
 
 
 # write out demos dataset
-write_csv(demographics, "data/demographics.csv")
+# write_csv(demographics, "data/demographics.csv")
 
 # read-in coltypes (reference): "icccfffdllll"
             
 # demographics2 <- read_csv("data/demographics.csv",
 #          col_types = "icccfffdllll")          
             
+

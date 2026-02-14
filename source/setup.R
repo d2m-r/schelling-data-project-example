@@ -2,6 +2,7 @@
 
 library(tidyverse)
 library(googlesheets4)
+library(flextable)
 
 
 ########## GOOGLE SHEETS DATA ###########

@@ -1,6 +1,8 @@
 ---
 title: "Schelling Problems and Focal Points in Tacit Coordination"
 format: html
+
+echo: false
 ---
 
 ```{r}
@@ -11,6 +13,25 @@ format: html
 source("source/functions.R")
 source("source/setup.R")
 ```
+
+```{r}
+#| label: read-demographics
+
+# Typically, prefer to read in from csv, but if we are already
+# working with a new/modified demographics df in the environment, 
+# we don't want to overwrite it by reading in the csv again.
+
+# Does the demographics df exist in the environment?
+if (!exists("demographics")) {
+    # If not, read in the local snapshot file
+    demographics <- read_csv("data/demographics.csv",
+                             col_types = "icccfffdllll")
+}
+```
+
+
+
+
 
 <!-- 
 
@@ -86,11 +107,64 @@ We constructed a survey modeled after Schelling's original report. Schelling him
 
 ## Participants
 
-Participants were primarily students at the University of Chicago enrolled in courses taught by the author, where they were asked to complete the survey as part of class activities. Other participants included faculty and staff at the University of Chicago who were affiliated with the author's research lab or courses, University of Chicago alumni, and a small number of individuals not affiliated with the University of Chicago who discovered the survey online. Not all participants indicated their affiliation. In some cases, affiliations were retroactively added based on unambiguous timing of survey responses.[^For example, responses collected during the 80 minutes of an undergraduate course session were retroactively coded as "UChicago undergraduate student".]
+```{r}
+#| label: demos-by-id
 
-Beginning in Fall of 2023, participants were presented with optional demographic questions where they could indicate gender identity, time spent living in the US and Chicago, and languages spoken. <!-- Note any interesting patterns if they emerge from the demographics -->
+# Create demos by unique id (remove non-exclusive)
+demos_by_id <- demographics |> 
+    select(-c(status, identities, languages)) |> 
+    distinct(id, .keep_all = TRUE)
+```
 
-<!-- Participant affiliation table -->
+In total, `r nrow(demos_by_id)` participants completed the survey. Participants were primarily students at the University of Chicago enrolled in courses taught by the author, where they were asked to complete the survey as part of class activities. Other participants included faculty and staff at the University of Chicago who were affiliated with the author's research lab or courses, University of Chicago alumni, and a small number of individuals not affiliated with the University of Chicago who discovered the survey online ($N$ = `r sum(demos_by_id$affiliation == "Not Affiliated")`. Not all participants indicated their affiliation. When possible, affiliations were retroactively inferred based on unambiguous timing of survey responses.^[For example, responses collected during the 80 minutes of an undergraduate course session were retroactively coded as "UChicago undergraduate student".]
+
+```{r}
+#| label: tbl-participant-affiliation
+#| tbl-cap: "Participant UChicago affiliation."
+
+# Create table of participant affiliations
+demos_by_id |> 
+    count(affiliation) |> 
+    arrange(desc(n)) |> 
+    # Turn summary table into flextable object
+    flextable() |> 
+    # Change column names
+    set_header_labels(
+        affiliation = "Affiliation",
+        n = "Count"
+    )
+
+```
+
+```{r}
+#| label: language-summary
+
+# for easier in-text reporting
+
+languages_list <- unique(demographics$languages)[!is.na(unique(demographics$languages))] |> # remove NA from list of unique languages
+    str_to_title()
+
+n_unique_lang <- length(languages_list)
+
+# What this does:
+# 1) takes the list of unique languages (levels of the languages factor)
+# 2) collapses all but the last one into a comma-separated string
+# 3) adds "and" before the last language in the list
+# This can be done directly in the markdown with `r ...`, but defining it here 
+# allows for easier readability and editing of the markdown text 
+print_lang_list <- str_glue("{str_c(languages_list[1:(n_unique_lang - 1)], collapse = ', ')}, and {languages_list[n_unique_lang]}")
+
+```
+
+```{r}
+#| label: gender-summary
+
+gender_counts <- fct_count(demos_by_id$gender)
+
+```
+
+Beginning in Fall of 2023, participants were presented with optional demographic questions where they could indicate gender identity, time spent living in the US and Chicago, and languages spoken. Of the `r sum(!is.na(demos_by_id$gender))` respondents who indicated a gender identity, `r sum(demos_by_id$gender == "Woman", na.rm=T)` identified as women, `r sum(demos_by_id$gender == "Man", na.rm=T)` identified as men, and the remaining `r sum(demos_by_id$gender == "Other", na.rm=T)` identified as non-binary, multiple genders, or other. Unique languages reported were `r print_lang_list`. 
+
 
 
 
