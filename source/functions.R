@@ -64,3 +64,24 @@ filter_errors <- function(data, colErr="") {
 
 
 
+######## format_pct() ##################
+
+format_pct <- function(number, digits=2, sign=TRUE) {
+    
+    pct <- round(number * 100, digits)
+    
+    if (sign==FALSE) {
+        return(pct)
+    } else {
+        display <- str_glue("{pct}%")
+        return(display)
+    }
+        
+
+}
+    
+    
+    
+    
+    
+    
