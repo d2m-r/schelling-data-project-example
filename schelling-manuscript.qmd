@@ -3,6 +3,7 @@ title: "Schelling Problems and Focal Points in Tacit Coordination"
 format: html
 
 bibliography: bibliography.bib
+csl: apa.csl
 
 echo: false
 ---
@@ -72,6 +73,9 @@ about 1-2 pages (~500-1000 words) of content in the literature review.
 
 -->
 
+# Introduction
+
+<!-- In APA7 formatting there should NOT be an introduction or literature review Heading 1 like there is here, but having the first heading that appears be level 1 is necessary for RStudio's outline to work as expected -->
 
 Thomas Schelling introduced the concept of "focal points" in The Strategy of Conflict with the intention of expanding the contemporary perspectives of game theory to include cooperative, not just competitive, games in human decision-making [@schelling_1960_strategy]. Though his work certainly proved influential in this regard, concepts of focal points and coordination games have found relevance well beyond game theory and economics as a whole. From improvisational music [@clementcanonne_2013_focal] to urban planning [@rondinelli_1973_urban], from human-computer interfacing [@wongetal_2023_comparing] to linguistic anthropology [@brownlevinson_1993_linguistic], from social stereotyping [@yoonhollingshead_2010_cultural] to online gaming [@rosscollister_2014_social], elements of Schelling's framework of coordinated decision-making seem ubiquitous.
 
@@ -106,9 +110,7 @@ We predicted that our survey results would largely replicate Schelling's origina
 
 # Methods
 
-<!-- TODO: Confirm Schelling participants and year. -->
-
-We constructed a survey modeled after Schelling's original report. Schelling himself did not perform a true "study" in reporting his results, but rather loosely surveyed the **graduate?** students in his class at **Yale?** in **the year**. Our data collection was similarly gathered quite loosely. The survey data were collected with the intention of serving a pedagogical purpose and with no intention to be published as rigorous study. While we cannot use these data to make empirical claims, they are nonetheless a useful and thought-provoking educational tool (as Schelling's data certainly were).
+We constructed a survey modeled after Schelling's original report. Schelling himself did not perform a true "study" in reporting his results, but rather loosely surveyed the students in his class at Yale in 1960. Our data collection was similarly gathered quite loosely. The survey data were collected with the intention of serving a pedagogical purpose and with no intention to be published as rigorous study. While we cannot use these data to make empirical claims, they are nonetheless a useful and thought-provoking educational tool (as Schelling's data certainly were).
 
 ## Participants
 
@@ -121,7 +123,7 @@ demos_by_id <- demographics |>
     distinct(id, .keep_all = TRUE)
 ```
 
-In total, `r nrow(demos_by_id)` participants completed the survey. Participants were primarily students at the University of Chicago enrolled in courses taught by the author, where they were asked to complete the survey as part of class activities. Other participants included faculty and staff at the University of Chicago who were affiliated with the author's research lab or courses, University of Chicago alumni, and a small number of individuals not affiliated with the University of Chicago who discovered the survey online ($N$ = `r sum(demos_by_id$affiliation == "Not Affiliated")`. Not all participants indicated their affiliation. When possible, affiliations were retroactively inferred based on unambiguous timing of survey responses.[^1]
+In total, `r nrow(demos_by_id)` participants completed the survey. Participants were primarily students at the University of Chicago enrolled in courses taught by the author, where they were asked to complete the survey as part of class activities. Other participants included faculty and staff at the University of Chicago who were affiliated with the author's research lab or courses, University of Chicago alumni, and a small number of individuals not affiliated with the University of Chicago who discovered the survey online ($N$ = `r sum(demos_by_id$affiliation == "Not Affiliated")`, see @tbl-participant-affiliation). Not all participants indicated their affiliation. When possible, affiliations were retroactively inferred based on unambiguous timing of survey responses.[^1]
 
 [^1]: For example, responses collected during the 80 minutes of an undergraduate course session were retroactively coded as "UChicago undergraduate student".
 
@@ -213,7 +215,7 @@ Responses that indicate clear misunderstanding of the question are excluded. The
 
 Responses to the meetup location questions were coded as "Other" if they included multiple locations without rankings (e.g., "pret or hutch"), were overly vague (e.g., "a major center within the city that everyone knows about"), or fanciful/impossible (e.g., "THE MOON!").
 
-## Results
+# Results
 
 Results are reported by individual item. Exact wording of each item is provided before reporting the results. <!-- For the "where-to-meet" questions, results are reported separately by interpersonal context (stranger, student, friend). -->
 
@@ -233,7 +235,7 @@ examples of creative use of the tools, but for now just keep it simple!
 -->
 
 
-### Coin Flip
+## Coin Flip
 
 You and an anonymous partner need to choose heads or tails.
 
@@ -247,17 +249,17 @@ You and an anonymous partner need to choose heads or tails.
 
 # Create simple proportional frequency table of results of coin flip tasks
 
-prop_coins_tbl <- coins %>%
-  count(goal, side, name = "n") %>%
-  group_by(goal) %>%
-  mutate(pct = n / sum(n)) %>%
-  ungroup() %>%
-  select(goal, side, pct) %>%
-  pivot_wider(names_from = goal, values_from = pct, values_fill = 0)
+prop_coins_tbl <- coins |> 
+    count(goal, side, name = "n") |>
+    group_by(goal) |>
+    mutate(pct = n / sum(n)) |>
+    ungroup() |>
+    select(goal, side, pct) |>
+    pivot_wider(names_from = goal, values_from = pct, values_fill = 0)
 
-prop_coins_tbl %>%
-  gt(rowname_col = "side") %>%
-  fmt_percent(columns = everything(), decimals = 1) %>%
+prop_coins_tbl |> 
+  gt(rowname_col = "side") |> 
+  fmt_percent(columns = everything(), decimals = 1) |>
   tab_header(
     title = "Coin flip choices by goal condition",
     subtitle = "Column-wise percentages (each goal sums to 100%)"
@@ -267,6 +269,7 @@ prop_coins_tbl %>%
 
 ```{r}
 #| label: fig-coin-flip-filled-bar
+#| fig-cap: "Distribution of coin-flip responses by goal condition."
 
 # filled bar plot showing distribution of responses to the coin flip questions, separated by task (same vs different)
 
@@ -278,9 +281,9 @@ ggplot(coins,
 
 ```
 
-When participants were prompted to choose the same answer as their partner, the responses were highly skewed: `r sum(coins$side == "Heads" & coins$goal == "Choose same")` out of `r sum(coins$goal == "Choose same")` (`r coin_flip_tab["Heads", "Choose same"]`%) chose heads. When participants were prompted to choose a different answer than their partner, the results were more balanced: `r sum(coins$side == "Heads" & coins$goal == "Choose different")` out of `r sum(coins$goal == "Choose different")` (`r coin_flip_tab["Heads", "Choose different"]`%) chose heads. These trends are in line with Schelling's original findings.
+@fig-coin-flip-filled-bar shows that when participants were prompted to choose the same answer as their partner, the responses were highly skewed: `r sum(coins$side == "Heads" & coins$goal == "Choose same")` out of `r sum(coins$goal == "Choose same")` (`r format_pct(prop_coins_tbl[[1, "Choose same"]])`) chose heads (see @tbl-coin-flip-results). When participants were prompted to choose a different answer than their partner, the results were more balanced: `r sum(coins$side == "Heads" & coins$goal == "Choose different")` out of `r sum(coins$goal == "Choose different")` (`r format_pct(prop_coins_tbl[[1, "Choose different"]])`) chose heads. These trends are in line with Schelling's original findings.
 
-### Guessing a Number
+## Guessing a Number
 
 You and an anonymous partner must choose a number. In each scenario, you both win if you match your partner's number.
 
@@ -327,11 +330,11 @@ second_choice_0_10 <- choices_0_10 |>
 
 # Create the markdown text that will generate if the first choice is 7
 
-text_7true <- str_glue("In selecting from an incremental set of integers, participants most frequently chose the number 7 ({first_choice_0_10$n} out of {total_responses_0_10} responses, {round(first_choice_0_10$n / total_responses_0_10 * 100, 1)}%). This number is often cited as a classic example of a Schelling point, as it is typically the most salient option in this set of choices, including in Schelling's own data.")
+text_7true <- str_glue("In selecting from an incremental set of integers, participants most frequently chose the number 7 ({first_choice_0_10$n} out of {total_responses_0_10} responses, {format_pct(first_choice_0_10$n / total_responses_0_10)}). This number is often cited as a classic example of a Schelling point, as it is typically the most salient option in this set of choices, including in Schelling's own data.")
 
 # Create the markdown text that will generate if the first choice is NOT 7
 
-text_7false <- str_glue("In selecting from an incremental set of integers, participants most frequently chose the number {first_choice_0_10$f} ({first_choice_0_10$n} out of {total_responses_0_10} responses, {round(first_choice_0_10$n / total_responses_0_10 * 100, 1)}%). This is counter to Schelling's original survey, where 7 was the most frequently chosen number.")
+text_7false <- str_glue("In selecting from an incremental set of integers, participants most frequently chose the number {first_choice_0_10$f} ({first_choice_0_10$n} out of {total_responses_0_10} responses, {format_pct(first_choice_0_10$n / total_responses_0_10)}). This is counter to Schelling's original survey, where 7 was the most frequently chosen number.")
 ```
 
 <!-- TODO: add inline reporting of the most common responses and their proportions -->
@@ -340,7 +343,7 @@ text_7false <- str_glue("In selecting from an incremental set of integers, parti
 
 `r if_else(first_is_7, text_7true, text_7false)`
 
-The second most common selection was `r str_glue("{second_choice_0_10$number_0_10} ({second_choice_0_10$n} out of {total_responses_0_10} responses, {round(second_choice_0_10$n / total_responses_0_10 * 100, 1)}%)")`.
+The second most common selection was `r str_glue("{second_choice_0_10$f} ({second_choice_0_10$n} out of {total_responses_0_10} responses, {round(second_choice_0_10$n / total_responses_0_10 * 100, 1)}%)")`.
 
 **Task 2:** Pick a number from the list[^2] below.
 
@@ -383,3 +386,4 @@ ggplot(aes(x=number_big)) +
           legend.position = "none") 
 ```
 
+# Discussion

@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Schelling Problems and Focal Points in Tacit Coordination</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="schelling-manuscript_files/libs/clipboard/clipboard.min.js"></script>
+<script src="schelling-manuscript_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="schelling-manuscript_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="schelling-manuscript_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="schelling-manuscript_files/libs/quarto-html/popper.min.js"></script>
+<script src="schelling-manuscript_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="schelling-manuscript_files/libs/quarto-html/anchor.min.js"></script>
+<link href="schelling-manuscript_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="schelling-manuscript_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="schelling-manuscript_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="schelling-manuscript_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="schelling-manuscript_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="schelling-manuscript_files/libs/tabwid-1.1.3/tabwid.css" rel="stylesheet">
+<script src="schelling-manuscript_files/libs/tabwid-1.1.3/tabwid.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Schelling Problems and Focal Points in Tacit Coordination</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!-- 
+
+QUARTER 1 vs QUARTER 2:
+
+The general format for the integrative data project is similar in both quarters, 
+but there are some important differences in content emphasis. 
+This example manuscript is models the format and requirements for Quarter 1, 
+which is considerably simpler in terms of analysis, visualization, and 
+presentation. Comments have been included to note some places where Quarter 2 
+projects will differ and where components included in this example 
+*are not required* in Quarter 1.
+
+-->
+<!--
+Q1: Literature Review
+
+1. Dynamic bibliography
+
+This example includes some dynamic citations using BibTeX and a .bib file. 
+It is not necessary to include dynamic citations or a .bib file in your data 
+projects for Quarter 1. You can choose to learn about these features on your 
+and include them if you wish to "level up" your project and potentially 
+earn a higher grade.
+
+2. Length
+
+There is no strict length requirement for the literature review in Quarter 1.
+If you are working on an ongoing project (like a thesis), you may choose to 
+include the literature review from a recent draft or proposal. If you are 
+working on a new project or an analysis just for this class, you should aim for
+about 1-2 pages (~500-1000 words) of content in the literature review.
+
+-->
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<!-- In APA7 formatting there should NOT be an introduction or literature review Heading 1 like there is here, but having the first heading that appears be level 1 is necessary for RStudio's outline to work as expected -->
+<p>Thomas Schelling introduced the concept of “focal points” in The Strategy of Conflict with the intention of expanding the contemporary perspectives of game theory to include cooperative, not just competitive, games in human decision-making <span class="citation" data-cites="schelling_1960_strategy">(<a href="#ref-schelling_1960_strategy" role="doc-biblioref">Schelling, 1960</a>)</span>. Though his work certainly proved influential in this regard, concepts of focal points and coordination games have found relevance well beyond game theory and economics as a whole. From improvisational music <span class="citation" data-cites="clementcanonne_2013_focal">(<a href="#ref-clementcanonne_2013_focal" role="doc-biblioref">Clément Canonne, 2013</a>)</span> to urban planning <span class="citation" data-cites="rondinelli_1973_urban">(<a href="#ref-rondinelli_1973_urban" role="doc-biblioref">Rondinelli, 1973</a>)</span>, from human-computer interfacing <span class="citation" data-cites="wongetal_2023_comparing">(<a href="#ref-wongetal_2023_comparing" role="doc-biblioref">Wong et al., 2023</a>)</span> to linguistic anthropology <span class="citation" data-cites="brownlevinson_1993_linguistic">(<a href="#ref-brownlevinson_1993_linguistic" role="doc-biblioref">Brown &amp; Levinson, 1993</a>)</span>, from social stereotyping <span class="citation" data-cites="yoonhollingshead_2010_cultural">(<a href="#ref-yoonhollingshead_2010_cultural" role="doc-biblioref">Yoon &amp; Hollingshead, 2010</a>)</span> to online gaming <span class="citation" data-cites="rosscollister_2014_social">(<a href="#ref-rosscollister_2014_social" role="doc-biblioref">Ross &amp; Collister, 2014</a>)</span>, elements of Schelling’s framework of coordinated decision-making seem ubiquitous.</p>
+<p>In this brief report, we consider focal points from a cognitive science perspective. We present data from an informal survey mimicking Schelling’s early (and also quite informal) study in The Strategy of Conflict <span class="citation" data-cites="schelling_1960_strategy">(<a href="#ref-schelling_1960_strategy" role="doc-biblioref">Schelling, 1960</a>)</span>. We discuss our findings as they relate to nonverbal communication and how these concepts may be extended to further our understanding of coordination in everyday conversation.</p>
+<p>Focal points (also called Schelling points) were first conceptualized within the field of economics. Schelling noted that by focusing on zero-sum or fully competitive behavioral scenarios, game theory had failed to account for many real-world games whose outcome rested on successful coordination, not competition, among multiple players. In the context of coordination games, Schelling’s focal points are the salient solutions that players tend to choose due to their intuitively recognizable or, more often, socially shared nature. Critically, players tasked with coordination choose these options even in the absence of explicit communication <span class="citation" data-cites="mehtaetal_1994_nature">(<a href="#ref-mehtaetal_1994_nature" role="doc-biblioref">Mehta et al., 1994</a>)</span>.</p>
+<p>Since being introduced in game theory, focal points have seen broader application across the social sciences. In social psychology, focal points offer an explanation for the natural solutions individuals find in social coordination problems where multiple choices are equally valid, as individuals may rely on common expectations or cultural cues to make decisions that lead to successful coordination <span class="citation" data-cites="sugden_1995_theory">(<a href="#ref-sugden_1995_theory" role="doc-biblioref">Sugden, 1995</a>)</span>. Social norms, traditions, and conventions contribute to the emergence of focal points, and they showcase how individuals rely on shared understanding to achieve coordination without explicit negotiation <span class="citation" data-cites="bacharachbernasconi_1997_variable">(<a href="#ref-bacharachbernasconi_1997_variable" role="doc-biblioref">Bacharach &amp; Bernasconi, 1997</a>)</span>.</p>
+<p>These principles of implicit coordination are clearly applicable to relatively broad real-life contexts, such as meeting someone in a crowded place, deciding on a meeting time without prior communication, or determining where to sit in an auditorium <span class="citation" data-cites="schelling_1960_strategy">(<a href="#ref-schelling_1960_strategy" role="doc-biblioref">Schelling, 1960</a>)</span>. However, they may additionally apply to narrower contexts we might typically associate with explicit coordination, such as face-to-face conversation. In conversation, we use speech (or sign language) to express meaning “on-the-record,” but conversational interaction consists of much more than formal language <span class="citation" data-cites="clark_1996_using">(<a href="#ref-clark_1996_using" role="doc-biblioref">Clark, 1996</a>)</span>. “Off-the-record” non-linguistic signals allow interlocutors to send highly informative but implicit messages alongside explicit meaning in speech. Nonverbal resources like co-speech gesture and paralinguistic resources like intonation can serve critical pragmatic functions <span class="citation" data-cites="mcneill_1992_hand">(<a href="#ref-mcneill_1992_hand" role="doc-biblioref">McNeill, 1992</a>)</span>. These tools can make conversation more efficient by allowing addressees to make inferences about speaker intention and meaning based on contextual cues <span class="citation" data-cites="clark_1996_using">(<a href="#ref-clark_1996_using" role="doc-biblioref">Clark, 1996</a>)</span>.</p>
+<p>In the context of everyday interaction, the significance of focal points is tightly linked to common ground <span class="citation" data-cites="clark_1996_using">(<a href="#ref-clark_1996_using" role="doc-biblioref">Clark, 1996</a>)</span>. In simplest terms, conversational common ground is the shared knowledge, beliefs, assumptions, and experiences that participants in a face-to-face conversation believe to be mutually understood. At one level, common ground refers to common knowledge (Stalnaker, 1978). If all interlocutors know that they have all been invited to Anna’s birthday party next Saturday, they may discuss the presents they plan to bring without explicitly mentioning who Anna is, why they would be giving her presents, or the deadline for buying a present for the party (Clark &amp; Marshall, 1981). These assumptions are localized to this group in this conversation on this topic, but there are also generalized social assumptions at play (Clark, 1996). The party-goers know that presents are given for birthdays, that both the invitees and the host will be at the party, that the presents will be given to the host at the party, that presents should be appropriate for what the host would want to receive, etc. (Clark &amp; Marshall, 1981).</p>
+<p>Conversational common ground also encompasses emergent properties of the interaction, guided by cultural expectations and linguistic systems (Clark, 1996). The party-goers may refer to Anna as the “birthday girl” or simply “her” rather than naming her at each reference. One interlocutor may ask a question and expect to get an answer that is prompt, relevant, and truthful, given that all interlocutors are assumed to follow principles of English pragmatics and conversational organization (Grice, 1975). Common ground, both that which is present at the initiation of the conversation and that which emerges as a product of conversation, allows interlocutors to disambiguate and infer meaning with focal points (Clark, 1996). When a party-goer says, “I really hope she likes it,” the listeners face multiple valid options when determining the referents of “she” and “it” (Clark, 1996). The conversation’s general focus on Anna’s birthday likely enables a convergence of understanding on “Anna” as the “she”; Anna is highly salient in the immediate context (Clark, 1996). Listeners will need to rely on subtler mutual salience to determine whether “it” refers to the party, some particular present, or something else entirely (Clark, 1996).</p>
+<section id="present-study" class="level2">
+<h2 class="anchored" data-anchor-id="present-study">Present Study</h2>
+<!-- Ideally the present study section should lay out your research problem,
+specific research questions, and hypotheses. In Quarter 1, you may not have 
+these elements fully developed yet, but you should at least try to articulate 
+the general problem you are addressing and what you hope to learn from your data.
+
+The more specific you can be with your questions, the easier it will be for you
+to clearly report your results.
+-->
+<p>In the present study, we do not directly probe how interlocutors use focal points in conversation. Instead, we informally replicate Schelling’s first survey (Schelling, 1960). We consider both the results of our survey and of Schelling’s survey to theorize how these generalized points of mutual salience may add to our understanding of the implicit coordination facilitating everyday conversation.</p>
+<p>We predicted that our survey results would largely replicate Schelling’s original findings. Specifically, we expected that participants would converge on a small number of highly salient responses to the various coordination problems presented in the survey. We additionally predicted that altering the interpersonal context of the “where-and-when” meeting question would influence the specific responses given by participants, as different social relationships may afford different shared expectations and common ground.</p>
+</section>
+</section>
+<section id="methods" class="level1">
+<h1>Methods</h1>
+<p>We constructed a survey modeled after Schelling’s original report. Schelling himself did not perform a true “study” in reporting his results, but rather loosely surveyed the students in his class at Yale in 1960. Our data collection was similarly gathered quite loosely. The survey data were collected with the intention of serving a pedagogical purpose and with no intention to be published as rigorous study. While we cannot use these data to make empirical claims, they are nonetheless a useful and thought-provoking educational tool (as Schelling’s data certainly were).</p>
+<section id="participants" class="level2">
+<h2 class="anchored" data-anchor-id="participants">Participants</h2>
+<p>In total, 319 participants completed the survey. Participants were primarily students at the University of Chicago enrolled in courses taught by the author, where they were asked to complete the survey as part of class activities. Other participants included faculty and staff at the University of Chicago who were affiliated with the author’s research lab or courses, University of Chicago alumni, and a small number of individuals not affiliated with the University of Chicago who discovered the survey online (<span class="math inline">\(N\)</span> = 1, see <a href="#tbl-participant-affiliation" class="quarto-xref">Table&nbsp;1</a>). Not all participants indicated their affiliation. When possible, affiliations were retroactively inferred based on unambiguous timing of survey responses.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="cell">
+<div id="tbl-participant-affiliation" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-participant-affiliation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Participant UChicago affiliation.
+</figcaption>
+<div aria-describedby="tbl-participant-affiliation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div class="tabwid"><style>.cl-fa1c00a0{}.cl-fa15c5f0{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fa1860c6{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fa1860c7{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fa187b06{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fa187b07{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fa187b10{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fa187b11{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fa187b12{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fa187b13{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style><table data-quarto-disable-processing="true" class="cl-fa1c00a0"><thead><tr style="overflow-wrap:break-word;"><th class="cl-fa187b06"><p class="cl-fa1860c6"><span class="cl-fa15c5f0">Affiliation</span></p></th><th class="cl-fa187b07"><p class="cl-fa1860c7"><span class="cl-fa15c5f0">Count</span></p></th></tr></thead><tbody><tr style="overflow-wrap:break-word;"><td class="cl-fa187b10"><p class="cl-fa1860c6"><span class="cl-fa15c5f0">Undergraduate Student</span></p></td><td class="cl-fa187b11"><p class="cl-fa1860c7"><span class="cl-fa15c5f0">217</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fa187b10"><p class="cl-fa1860c6"><span class="cl-fa15c5f0">MA Student</span></p></td><td class="cl-fa187b11"><p class="cl-fa1860c7"><span class="cl-fa15c5f0">89</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fa187b10"><p class="cl-fa1860c6"><span class="cl-fa15c5f0">PhD Student</span></p></td><td class="cl-fa187b11"><p class="cl-fa1860c7"><span class="cl-fa15c5f0">6</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fa187b10"><p class="cl-fa1860c6"><span class="cl-fa15c5f0">Faculty/Staff</span></p></td><td class="cl-fa187b11"><p class="cl-fa1860c7"><span class="cl-fa15c5f0">5</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fa187b10"><p class="cl-fa1860c6"><span class="cl-fa15c5f0">Other Student</span></p></td><td class="cl-fa187b11"><p class="cl-fa1860c7"><span class="cl-fa15c5f0">1</span></p></td></tr><tr style="overflow-wrap:break-word;"><td class="cl-fa187b12"><p class="cl-fa1860c6"><span class="cl-fa15c5f0">Not Affiliated</span></p></td><td class="cl-fa187b13"><p class="cl-fa1860c7"><span class="cl-fa15c5f0">1</span></p></td></tr></tbody></table></div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<p>Beginning in Fall of 2023, participants were presented with optional demographic questions where they could indicate gender identity, time spent living in the US and Chicago, and languages spoken. Of the 89 respondents who indicated a gender identity, 68 identified as women, 18 identified as men, and the remaining 3 identified as non-binary, multiple genders, or other. Unique languages reported were English, Mandarin, Teochew, Hindi, Gujarati, Korean, French, Spanish, Japanese, Arabic, Portuguese, and Vietnamese.</p>
+</section>
+<section id="materials" class="level2">
+<h2 class="anchored" data-anchor-id="materials">Materials</h2>
+<p>Schelling’s classroom survey asked students questions challenging them to ambiguously “win” a game by coordinating with a stranger. Famously, he asked where and when the participants would meet a stranger in New York City without any prior communication. Additionally, the survey included a series of questions encouraging convergence on a response in more “game-like” circumstances: guessing a number, flipping a coin, etc.</p>
+<p>The survey in this report was in essence an abbreviated version of Schelling’s. It included a selection of the “game-like” questions taken directly from Schelling’s survey. We asked the classic where-and-when questions with some revisions. Because our survey was conducted at the University of Chicago, our version of the where-and-when question asked about meeting a stranger in Chicago rather than New York City. We additionally included two follow-up questions that were not included in Schelling’s data, changing the interpersonal context between the participant and hypothetical partner.</p>
+<!-- description of google form hosting & link -->
+</section>
+<section id="data-preparation" class="level2">
+<h2 class="anchored" data-anchor-id="data-preparation">Data Preparation</h2>
+<p>Responses have been cleaned to account for predictable variations in how individuals input popular responses – e.g., “the reg”, “Regenstein”, and “In the Reg.” are all reported as “The Reg.” Ambiguous responses (e.g., “the library”) are left ambiguous.</p>
+<section id="exclusions" class="level3">
+<h3 class="anchored" data-anchor-id="exclusions">Exclusions</h3>
+<!-- TODO: add inline refs for exclusion numbers & remove temporary formatting -->
+<p>Of the 942 total responses to the three “meetup location” questions, 56 were excluded and <span color="red">NUMBER GOES HERE</span> were re-coded as “Other”.</p>
+<p>Responses that indicate clear misunderstanding of the question are excluded. These primarily consisted of responses in the “meeting a stranger” or “meeting a student” questions. Since these questions specify that the other party is unknown to the respondent, responses should not assume prior familiarity or experience with the other party, for example “their house”, “the last place we last met”, “where we usually see each other”, or “where you expect them to be at a certain time.”</p>
+<p>Responses to the meetup location questions were coded as “Other” if they included multiple locations without rankings (e.g., “pret or hutch”), were overly vague (e.g., “a major center within the city that everyone knows about”), or fanciful/impossible (e.g., “THE MOON!”).</p>
+</section>
+</section>
+</section>
+<section id="results" class="level1">
+<h1>Results</h1>
+<p>Results are reported by individual item. Exact wording of each item is provided before reporting the results. <!-- For the "where-to-meet" questions, results are reported separately by interpersonal context (stranger, student, friend). --></p>
+<!-- 
+
+### Meeting Time
+
+### Meeting Locations
+
+Reporting and visualizing the responses for the 4 meeting questions require more advanced 
+techniques than covered in D2M-R I, so the following sections are left blank for now.
+
+There are the most interesting part of the survey, so I'll add these in later to give more
+examples of creative use of the tools, but for now just keep it simple!
+
+-->
+<section id="coin-flip" class="level2">
+<h2 class="anchored" data-anchor-id="coin-flip">Coin Flip</h2>
+<p>You and an anonymous partner need to choose heads or tails.</p>
+<p><strong>Task 1:</strong> If you both choose the <em>SAME</em> answer, you both win. Which do you choose?</p>
+<p><strong>Task 2:</strong> If you both choose <em>DIFFERENT</em> answers, you both win. Which do you choose?</p>
+<div class="cell">
+<div id="tbl-coin-flip-results" class="cell quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-coin-flip-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Proportional frequency table of responses to coin flip questions, separated by task (same vs different).
+</figcaption>
+<div aria-describedby="tbl-coin-flip-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<div id="yafmoldpel" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#yafmoldpel table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#yafmoldpel thead, #yafmoldpel tbody, #yafmoldpel tfoot, #yafmoldpel tr, #yafmoldpel td, #yafmoldpel th {
+  border-style: none;
+}
+
+#yafmoldpel p {
+  margin: 0;
+  padding: 0;
+}
+
+#yafmoldpel .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#yafmoldpel .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#yafmoldpel .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#yafmoldpel .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#yafmoldpel .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#yafmoldpel .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yafmoldpel .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#yafmoldpel .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#yafmoldpel .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#yafmoldpel .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#yafmoldpel .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#yafmoldpel .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#yafmoldpel .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#yafmoldpel .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#yafmoldpel .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#yafmoldpel .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#yafmoldpel .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#yafmoldpel .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#yafmoldpel .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yafmoldpel .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#yafmoldpel .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#yafmoldpel .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#yafmoldpel .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yafmoldpel .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#yafmoldpel .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#yafmoldpel .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yafmoldpel .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yafmoldpel .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#yafmoldpel .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yafmoldpel .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#yafmoldpel .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#yafmoldpel .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#yafmoldpel .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yafmoldpel .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#yafmoldpel .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yafmoldpel .gt_left {
+  text-align: left;
+}
+
+#yafmoldpel .gt_center {
+  text-align: center;
+}
+
+#yafmoldpel .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#yafmoldpel .gt_font_normal {
+  font-weight: normal;
+}
+
+#yafmoldpel .gt_font_bold {
+  font-weight: bold;
+}
+
+#yafmoldpel .gt_font_italic {
+  font-style: italic;
+}
+
+#yafmoldpel .gt_super {
+  font-size: 65%;
+}
+
+#yafmoldpel .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#yafmoldpel .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#yafmoldpel .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#yafmoldpel .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#yafmoldpel .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#yafmoldpel .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#yafmoldpel .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#yafmoldpel .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#yafmoldpel div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_heading header">
+<td colspan="3" class="gt_heading gt_title gt_font_normal">Coin flip choices by goal condition</td>
+</tr>
+<tr class="gt_heading even">
+<td colspan="3" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">Column-wise percentages (each goal sums to 100%)</td>
+</tr>
+<tr class="gt_col_headings header">
+<th id="a::stub" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Choose-same" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Choose same</th>
+<th id="Choose-different" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Choose different</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<th id="stub_1_1" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Heads</th>
+<td class="gt_row gt_right" headers="stub_1_1 Choose same">85.8%</td>
+<td class="gt_row gt_right" headers="stub_1_1 Choose different">59.0%</td>
+</tr>
+<tr class="even">
+<th id="stub_1_2" class="gt_row gt_left gt_stub" data-quarto-table-cell-role="th" scope="row">Tails</th>
+<td class="gt_row gt_right" headers="stub_1_2 Choose same">14.2%</td>
+<td class="gt_row gt_right" headers="stub_1_2 Choose different">41.0%</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-coin-flip-filled-bar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-coin-flip-filled-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="schelling-manuscript_files/figure-html/fig-coin-flip-filled-bar-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-coin-flip-filled-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Distribution of coin-flip responses by goal condition.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><a href="#fig-coin-flip-filled-bar" class="quarto-xref">Figure&nbsp;1</a> shows that when participants were prompted to choose the same answer as their partner, the responses were highly skewed: 272 out of 317 (85.8%) chose heads (see <a href="#tbl-coin-flip-results" class="quarto-xref">Table&nbsp;2</a>). When participants were prompted to choose a different answer than their partner, the results were more balanced: 187 out of 317 (58.99%) chose heads. These trends are in line with Schelling’s original findings.</p>
+</section>
+<section id="guessing-a-number" class="level2">
+<h2 class="anchored" data-anchor-id="guessing-a-number">Guessing a Number</h2>
+<p>You and an anonymous partner must choose a number. In each scenario, you both win if you match your partner’s number.</p>
+<p><strong>Task 1:</strong> Pick a number 0-10.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-number-0-10-bar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-number-0-10-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="schelling-manuscript_files/figure-html/fig-number-0-10-bar-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-number-0-10-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Distribution of responses to the ‘pick a number 0-10’ task.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<!-- TODO: add inline reporting of the most common responses and their proportions -->
+<!-- If 7 is  most common, print text_7true, else text_7false -->
+<p>In selecting from an incremental set of integers, participants most frequently chose the number 7 (114 out of 315 responses, 36.19%). This number is often cited as a classic example of a Schelling point, as it is typically the most salient option in this set of choices, including in Schelling’s own data.</p>
+<p>The second most common selection was 5 (101 out of 315 responses, 32.1%).</p>
+<p><strong>Task 2:</strong> Pick a number from the list<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> below.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-number-list-bar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-number-list-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="schelling-manuscript_files/figure-html/fig-number-list-bar-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-number-list-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Distribution of responses to the ‘pick a number from the list’ task.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Task 3:</strong> Pick any number. You win if you match your partner, <em>and</em> the bigger the number, the more you both win.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-number-big-bar" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-number-big-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="schelling-manuscript_files/figure-html/fig-number-big-bar-1.png" class="img-fluid figure-img" width="672">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-number-big-bar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Distribution of responses to the ‘pick any number’ task.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="discussion" class="level1 unnumbered">
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Discussion</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-bacharachbernasconi_1997_variable" class="csl-entry" role="listitem">
+Bacharach, M., &amp; Bernasconi, M. (1997). The <span>Variable Frame Theory</span> of <span>Focal Points</span>: <span>An Experimental Study</span>. <em>Games and Economic Behavior</em>, <em>19</em>(1), 1–45. <a href="https://doi.org/10.1006/game.1997.0546">https://doi.org/10.1006/game.1997.0546</a>
+</div>
+<div id="ref-brownlevinson_1993_linguistic" class="csl-entry" role="listitem">
+Brown, P., &amp; Levinson, S. C. (1993). <em>Linguistic and non-linguistic coding of spatial arrays: Exploration in <span>Mayan</span> cognition</em> [Unpublished manuscript].
+</div>
+<div id="ref-clark_1996_using" class="csl-entry" role="listitem">
+Clark, H. H. (1996). <em>Using <span>Language</span></em>. Cambridge University Press.
+</div>
+<div id="ref-clementcanonne_2013_focal" class="csl-entry" role="listitem">
+Clément Canonne. (2013). Focal <span>Points</span> in <span>Collective Free Improvisation</span>. <em>Perspectives of New Music</em>, <em>51</em>(1), 40. <a href="https://doi.org/10.7757/persnewmusi.51.1.0040">https://doi.org/10.7757/persnewmusi.51.1.0040</a>
+</div>
+<div id="ref-mcneill_1992_hand" class="csl-entry" role="listitem">
+McNeill, D. (1992). <em>Hand and mind: What gestures reveal about thought</em>. University of Chicago Press.
+</div>
+<div id="ref-mehtaetal_1994_nature" class="csl-entry" role="listitem">
+Mehta, J., Starmer, C., &amp; Sugden, R. (1994). The <span>Nature</span> of <span>Salience</span>: <span>An Experimental Investigation</span> of <span>Pure Coordination Games</span>. <em>The American Economic Review</em>, <em>84</em>(3), 658–673. <a href="https://www.jstor.org/stable/2118074">https://www.jstor.org/stable/2118074</a>
+</div>
+<div id="ref-rondinelli_1973_urban" class="csl-entry" role="listitem">
+Rondinelli, D. A. (1973). Urban <span>Planning</span> as <span>Policy Analysis</span>: <span>Management</span> of <span>Urban Change</span>. <em>Journal of the American Institute of Planners</em>, <em>39</em>(1), 13–22. <a href="https://doi.org/10.1080/01944367308977650">https://doi.org/10.1080/01944367308977650</a>
+</div>
+<div id="ref-rosscollister_2014_social" class="csl-entry" role="listitem">
+Ross, T. L., &amp; Collister, L. B. (2014). A social scientific framework for social systems in online video games: <span>Building</span> a better looking for raid loot system in <span>World</span> of <span>Warcraft</span>. <em>Computers in Human Behavior</em>, <em>36</em>, 1–12. <a href="https://doi.org/10.1016/j.chb.2014.03.023">https://doi.org/10.1016/j.chb.2014.03.023</a>
+</div>
+<div id="ref-schelling_1960_strategy" class="csl-entry" role="listitem">
+Schelling, T. C. (1960). <em>The <span>Strategy</span> of <span>Conflict</span></em>. Harvard University Press.
+</div>
+<div id="ref-sugden_1995_theory" class="csl-entry" role="listitem">
+Sugden, R. (1995). A <span>Theory</span> of <span>Focal Points</span>. <em>The Economic Journal</em>, <em>105</em>(430), 533–550. <a href="https://doi.org/10.2307/2235016">https://doi.org/10.2307/2235016</a>
+</div>
+<div id="ref-wongetal_2023_comparing" class="csl-entry" role="listitem">
+Wong, S.-K., Volonte, M., Liu, K.-Y., Ebrahimi, E., &amp; Babu, S. V. (2023). Comparing <span>Visual Attention</span> with <span>Leading</span> and <span>Following Virtual Agents</span> in a <span>Collaborative Perception-Action Task</span> in <span>VR</span>. <em>2023 <span>IEEE Conference Virtual Reality</span> and <span>3D User Interfaces</span> (<span>VR</span>)</em>, 152–162. <a href="https://doi.org/10.1109/VR55154.2023.00031">https://doi.org/10.1109/VR55154.2023.00031</a>
+</div>
+<div id="ref-yoonhollingshead_2010_cultural" class="csl-entry" role="listitem">
+Yoon, K., &amp; Hollingshead, A. B. (2010). Cultural <span>Stereotyping</span>, <span>Convergent Expectations</span>, and <span>Performance</span> in <span>Cross-Cultural Collaborations</span>. <em>Social Psychological and Personality Science</em>, <em>1</em>(2), 160–167. <a href="https://doi.org/10.1177/1948550610362597">https://doi.org/10.1177/1948550610362597</a>
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>For example, responses collected during the 80 minutes of an undergraduate course session were retroactively coded as “UChicago undergraduate student”.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Participants were presented with the following list of numbers in a randomized order: 7, 13, 99, 100, 261, 555.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
