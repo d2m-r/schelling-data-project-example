@@ -3,6 +3,8 @@
 library(tidyverse)
 library(googlesheets4)
 library(flextable)
+library(gt)
+library(citr) # To install use: devtools::install_github("crsh/citr")
 
 
 ########## GOOGLE SHEETS DATA ###########

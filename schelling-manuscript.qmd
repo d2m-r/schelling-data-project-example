@@ -2,6 +2,8 @@
 title: "Schelling Problems and Focal Points in Tacit Coordination"
 format: html
 
+bibliography: bibliography.bib
+
 echo: false
 ---
 
@@ -9,9 +11,14 @@ echo: false
 #| label: setup
 #| include: false
 
-# Source setup script
-source("source/functions.R")
-source("source/setup.R")
+# Set seed
+set.seed(2026)
+
+# Source setup scripts
+source("source/setup.R") # Load libraries, import data
+source("source/functions.R") # Define functions
+source("source/results-dfs.R") # Create tidy, analysis-friendly dfs
+
 ```
 
 ```{r}
@@ -30,9 +37,6 @@ if (!exists("demographics")) {
 ```
 
 
-
-
-
 <!-- 
 
 QUARTER 1 vs QUARTER 2:
@@ -46,7 +50,6 @@ projects will differ and where components included in this example
 *are not required* in Quarter 1.
 
 -->
-
 
 <!--
 Q1: Literature Review
@@ -67,23 +70,25 @@ include the literature review from a recent draft or proposal. If you are
 working on a new project or an analysis just for this class, you should aim for
 about 1-2 pages (~500-1000 words) of content in the literature review.
 
---> 
+-->
 
-Thomas Schelling introduced the concept of "focal points" in The Strategy of Conflict with the intention of expanding the contemporary perspectives of game theory to include cooperative, not just competitive, games in human decision making (Schelling, 1960). Though his work certainly proved influential in this regard, concepts of focal points and coordination games have found relevance well beyond game theory and economics as a whole. From improvisational music (Canonne, 2018) to urban planning (Rondinelli, 1983), from human-computer interfacing (Wong et al., 2009) to linguistic anthropology (Brown & Levinson, 1987), from social stereotyping (Yoon & Hollingshead, 2010) to online gaming (Ross & Collister, 2014), elements of Schelling's framework of coordinated decision-making seem ubiquitous.
 
-In this brief report, we consider focal points from a cognitive science perspective. We present data from an informal survey mimicking Schelling's early (and also quite informal) study in The Strategy of Conflict (Schelling, 1960). We discuss our findings as they relate to nonverbal communication and how these concepts may be extended to further our understanding of coordination in everyday conversation.
+Thomas Schelling introduced the concept of "focal points" in The Strategy of Conflict with the intention of expanding the contemporary perspectives of game theory to include cooperative, not just competitive, games in human decision-making [@schelling_1960_strategy]. Though his work certainly proved influential in this regard, concepts of focal points and coordination games have found relevance well beyond game theory and economics as a whole. From improvisational music [@clementcanonne_2013_focal] to urban planning [@rondinelli_1973_urban], from human-computer interfacing [@wongetal_2023_comparing] to linguistic anthropology [@brownlevinson_1993_linguistic], from social stereotyping [@yoonhollingshead_2010_cultural] to online gaming [@rosscollister_2014_social], elements of Schelling's framework of coordinated decision-making seem ubiquitous.
 
-Focal points (also called Schelling points) were first conceptualized within the field of economics. Schelling noted that by focusing on zero-sum or fully competitive behavioral scenarios, game theory had failed to account for many real-world games whose outcome rested on successful coordination, not competition, among multiple players (Schelling, 1960). In the context of coordination games, Schelling's focal points are the salient solutions that players tend to choose due to their intuitively recognizable or, more often, socially shared nature (Schelling, 1960). Critically, players tasked with coordination choose these options even in the absence of explicit communication (Mehta, Starmer, & Sugden, 1994).
+In this brief report, we consider focal points from a cognitive science perspective. We present data from an informal survey mimicking Schelling's early (and also quite informal) study in The Strategy of Conflict [@schelling_1960_strategy]. We discuss our findings as they relate to nonverbal communication and how these concepts may be extended to further our understanding of coordination in everyday conversation.
 
-Since being introduced in game theory, focal points have seen broader application across the social sciences. In social psychology, focal points offer an explanation for the natural solutions individuals find in social coordination problems where multiple choices are equally valid, as individuals may rely on common expectations or cultural cues to make decisions that lead to successful coordination (Sugden, 1995). Social norms, traditions, and conventions contribute to the emergence of focal points, and they showcase how individuals rely on shared understanding to achieve coordination without explicit negotiation (Bacharach & Bernasconi, 1997). This concept sheds light on the intricate ways in which human behavior and decision-making are influenced by social context and the desire to align with others (Chwe, 2001).
+Focal points (also called Schelling points) were first conceptualized within the field of economics. Schelling noted that by focusing on zero-sum or fully competitive behavioral scenarios, game theory had failed to account for many real-world games whose outcome rested on successful coordination, not competition, among multiple players. In the context of coordination games, Schelling's focal points are the salient solutions that players tend to choose due to their intuitively recognizable or, more often, socially shared nature. Critically, players tasked with coordination choose these options even in the absence of explicit communication [@mehtaetal_1994_nature].
 
-These principles of implicit coordination are clearly applicable to relatively broad real-life contexts, such as meeting someone in a crowded place, deciding on a meeting time without prior communication, or determining where to sit in an auditorium (Schelling, 1960). However, they may additionally apply to narrower contexts we might typically associate with explicit coordination, such as face-to-face conversation. In conversation, we use speech (or sign language) to express meaning "on-the-record," but conversational interaction consists of much more than formal language (Clark, 1996). "Off-the-record" non-linguistic signals allow interlocutors to send highly informative but implicit messages alongside explicit meaning in speech (Clark, 1996). Nonverbal resources like co-speech gesture and paralinguistic resources like intonation can serve critical pragmatic functions (McNeill, 1992). These tools can make conversation more efficient by allowing addressees to make inferences about speaker intention and meaning based on contextual cues (Clark, 1996).
+Since being introduced in game theory, focal points have seen broader application across the social sciences. In social psychology, focal points offer an explanation for the natural solutions individuals find in social coordination problems where multiple choices are equally valid, as individuals may rely on common expectations or cultural cues to make decisions that lead to successful coordination [@sugden_1995_theory]. Social norms, traditions, and conventions contribute to the emergence of focal points, and they showcase how individuals rely on shared understanding to achieve coordination without explicit negotiation [@bacharachbernasconi_1997_variable].
 
-In the context of everyday interaction, the significance of focal points is tightly linked to common ground (Clark, 1996). In simplest terms, conversational common ground is the shared knowledge, beliefs, assumptions, and experiences that participants in a face-to-face conversation believe to be mutually understood (Clark, 1996). At one level, common ground refers to common knowledge (Stalnaker, 1978). If all interlocutors know that they have all been invited to Anna's birthday party next Saturday, they may discuss the presents they plan to bring without explicitly mentioning who Anna is, why they would be giving her presents, or the deadline for buying a present for the party (Clark & Marshall, 1981). These assumptions are localized to this group in this conversation on this topic, but there are also generalized social assumptions at play (Clark, 1996). The party-goers know that presents are given for birthdays, that both the invitees and the host will be at the party, that the presents will be given to the host at the party, that presents should be appropriate for what the host would want to receive, etc. (Clark & Marshall, 1981).
+These principles of implicit coordination are clearly applicable to relatively broad real-life contexts, such as meeting someone in a crowded place, deciding on a meeting time without prior communication, or determining where to sit in an auditorium [@schelling_1960_strategy]. However, they may additionally apply to narrower contexts we might typically associate with explicit coordination, such as face-to-face conversation. In conversation, we use speech (or sign language) to express meaning "on-the-record," but conversational interaction consists of much more than formal language [@clark_1996_using]. "Off-the-record" non-linguistic signals allow interlocutors to send highly informative but implicit messages alongside explicit meaning in speech. Nonverbal resources like co-speech gesture and paralinguistic resources like intonation can serve critical pragmatic functions [@mcneill_1992_hand]. These tools can make conversation more efficient by allowing addressees to make inferences about speaker intention and meaning based on contextual cues [@clark_1996_using].
 
-Conversational common ground also encompasses emergent properties of the interaction, guided by cultural expectations and linguistic systems (Clark, 1996). The party-goers may refer to Anna as the "birthday girl" or simply "her" rather than naming her at each reference (Clark, 1996). One interlocutor may ask a question and expect to get an answer that is prompt, relevant, and truthful, given that all interlocutors are assumed to follow principles of English pragmatics and conversational organization (Grice, 1975). Common ground, both that which is present at the initiation of the conversation and that which emerges as a product of conversation, allows interlocutors to disambiguate and infer meaning with focal points (Clark, 1996). When a party-goer says, "I really hope she likes it," the listeners face multiple valid options when determining the referents of "she" and "it" (Clark, 1996). The conversation's general focus on Anna's birthday likely enables a convergence of understanding on "Anna" as the "she"; Anna is highly salient in the immediate context (Clark, 1996). Listeners will need to rely on subtler mutual salience to determine whether "it" refers to the party, some particular present, or something else entirely (Clark, 1996).
+In the context of everyday interaction, the significance of focal points is tightly linked to common ground [@clark_1996_using]. In simplest terms, conversational common ground is the shared knowledge, beliefs, assumptions, and experiences that participants in a face-to-face conversation believe to be mutually understood. At one level, common ground refers to common knowledge (Stalnaker, 1978). If all interlocutors know that they have all been invited to Anna's birthday party next Saturday, they may discuss the presents they plan to bring without explicitly mentioning who Anna is, why they would be giving her presents, or the deadline for buying a present for the party (Clark & Marshall, 1981). These assumptions are localized to this group in this conversation on this topic, but there are also generalized social assumptions at play (Clark, 1996). The party-goers know that presents are given for birthdays, that both the invitees and the host will be at the party, that the presents will be given to the host at the party, that presents should be appropriate for what the host would want to receive, etc. (Clark & Marshall, 1981).
+
+Conversational common ground also encompasses emergent properties of the interaction, guided by cultural expectations and linguistic systems (Clark, 1996). The party-goers may refer to Anna as the "birthday girl" or simply "her" rather than naming her at each reference. One interlocutor may ask a question and expect to get an answer that is prompt, relevant, and truthful, given that all interlocutors are assumed to follow principles of English pragmatics and conversational organization (Grice, 1975). Common ground, both that which is present at the initiation of the conversation and that which emerges as a product of conversation, allows interlocutors to disambiguate and infer meaning with focal points (Clark, 1996). When a party-goer says, "I really hope she likes it," the listeners face multiple valid options when determining the referents of "she" and "it" (Clark, 1996). The conversation's general focus on Anna's birthday likely enables a convergence of understanding on "Anna" as the "she"; Anna is highly salient in the immediate context (Clark, 1996). Listeners will need to rely on subtler mutual salience to determine whether "it" refers to the party, some particular present, or something else entirely (Clark, 1996).
 
 ## Present Study
+
 
 <!-- Ideally the present study section should lay out your research problem,
 specific research questions, and hypotheses. In Quarter 1, you may not have 
@@ -94,10 +99,10 @@ The more specific you can be with your questions, the easier it will be for you
 to clearly report your results.
 -->
 
+
 In the present study, we do not directly probe how interlocutors use focal points in conversation. Instead, we informally replicate Schelling's first survey (Schelling, 1960). We consider both the results of our survey and of Schelling's survey to theorize how these generalized points of mutual salience may add to our understanding of the implicit coordination facilitating everyday conversation.
 
 We predicted that our survey results would largely replicate Schelling's original findings. Specifically, we expected that participants would converge on a small number of highly salient responses to the various coordination problems presented in the survey. We additionally predicted that altering the interpersonal context of the "where-and-when" meeting question would influence the specific responses given by participants, as different social relationships may afford different shared expectations and common ground.
-
 
 # Methods
 
@@ -116,7 +121,9 @@ demos_by_id <- demographics |>
     distinct(id, .keep_all = TRUE)
 ```
 
-In total, `r nrow(demos_by_id)` participants completed the survey. Participants were primarily students at the University of Chicago enrolled in courses taught by the author, where they were asked to complete the survey as part of class activities. Other participants included faculty and staff at the University of Chicago who were affiliated with the author's research lab or courses, University of Chicago alumni, and a small number of individuals not affiliated with the University of Chicago who discovered the survey online ($N$ = `r sum(demos_by_id$affiliation == "Not Affiliated")`. Not all participants indicated their affiliation. When possible, affiliations were retroactively inferred based on unambiguous timing of survey responses.^[For example, responses collected during the 80 minutes of an undergraduate course session were retroactively coded as "UChicago undergraduate student".]
+In total, `r nrow(demos_by_id)` participants completed the survey. Participants were primarily students at the University of Chicago enrolled in courses taught by the author, where they were asked to complete the survey as part of class activities. Other participants included faculty and staff at the University of Chicago who were affiliated with the author's research lab or courses, University of Chicago alumni, and a small number of individuals not affiliated with the University of Chicago who discovered the survey online ($N$ = `r sum(demos_by_id$affiliation == "Not Affiliated")`. Not all participants indicated their affiliation. When possible, affiliations were retroactively inferred based on unambiguous timing of survey responses.[^1]
+
+[^1]: For example, responses collected during the 80 minutes of an undergraduate course session were retroactively coded as "UChicago undergraduate student".
 
 ```{r}
 #| label: tbl-participant-affiliation
@@ -163,19 +170,15 @@ gender_counts <- fct_count(demos_by_id$gender)
 
 ```
 
-Beginning in Fall of 2023, participants were presented with optional demographic questions where they could indicate gender identity, time spent living in the US and Chicago, and languages spoken. Of the `r sum(!is.na(demos_by_id$gender))` respondents who indicated a gender identity, `r sum(demos_by_id$gender == "Woman", na.rm=T)` identified as women, `r sum(demos_by_id$gender == "Man", na.rm=T)` identified as men, and the remaining `r sum(demos_by_id$gender == "Other", na.rm=T)` identified as non-binary, multiple genders, or other. Unique languages reported were `r print_lang_list`. 
-
-
-
+Beginning in Fall of 2023, participants were presented with optional demographic questions where they could indicate gender identity, time spent living in the US and Chicago, and languages spoken. Of the `r sum(!is.na(demos_by_id$gender))` respondents who indicated a gender identity, `r sum(demos_by_id$gender == "Woman", na.rm=T)` identified as women, `r sum(demos_by_id$gender == "Man", na.rm=T)` identified as men, and the remaining `r sum(demos_by_id$gender == "Other", na.rm=T)` identified as non-binary, multiple genders, or other. Unique languages reported were `r print_lang_list`.
 
 ## Materials
 
 Schelling's classroom survey asked students questions challenging them to ambiguously "win" a game by coordinating with a stranger. Famously, he asked where and when the participants would meet a stranger in New York City without any prior communication. Additionally, the survey included a series of questions encouraging convergence on a response in more "game-like" circumstances: guessing a number, flipping a coin, etc.
 
-The survey in this report was in essence an abbreviated version of Schelling's. It included a selection of the "game-like" questions taken directly from Schelling's survey. We asked the classic where-and-when questions with some revisions. Because our survey was conducted at the University of Chicago, our version of the where-and-when question asked about meeting a stranger in Chicago rather than New York City. We additionally included two follow-up questions that were not included in Schelling's data, changing the interpersonal context between the participant and hypothetical partner.  
+The survey in this report was in essence an abbreviated version of Schelling's. It included a selection of the "game-like" questions taken directly from Schelling's survey. We asked the classic where-and-when questions with some revisions. Because our survey was conducted at the University of Chicago, our version of the where-and-when question asked about meeting a stranger in Chicago rather than New York City. We additionally included two follow-up questions that were not included in Schelling's data, changing the interpersonal context between the participant and hypothetical partner.
 
 <!-- description of google form hosting & link -->
-
 
 ## Data Preparation
 
@@ -203,7 +206,8 @@ error_responses <-
 ```
 
 <!-- TODO: add inline refs for exclusion numbers & remove temporary formatting -->
-Of the `r total_where_responses` total responses to the three "meetup location" questions, `r error_responses` were excluded and <span color="red">NUMBER GOES HERE</span> were re-coded as "Other".
+
+Of the `r total_where_responses` total responses to the three "meetup location" questions, `r error_responses` were excluded and [NUMBER GOES HERE]{color="red"} were re-coded as "Other".
 
 Responses that indicate clear misunderstanding of the question are excluded. These primarily consisted of responses in the "meeting a stranger" or "meeting a student" questions. Since these questions specify that the other party is unknown to the respondent, responses should not assume prior familiarity or experience with the other party, for example "their house", "the last place we last met", "where we usually see each other", or "where you expect them to be at a certain time."
 
@@ -211,7 +215,14 @@ Responses to the meetup location questions were coded as "Other" if they include
 
 ## Results
 
+Results are reported by individual item. Exact wording of each item is provided before reporting the results. <!-- For the "where-to-meet" questions, results are reported separately by interpersonal context (stranger, student, friend). -->
+
+
 <!-- 
+
+### Meeting Time
+
+### Meeting Locations
 
 Reporting and visualizing the responses for the 4 meeting questions require more advanced 
 techniques than covered in D2M-R I, so the following sections are left blank for now.
@@ -221,37 +232,14 @@ examples of creative use of the tools, but for now just keep it simple!
 
 -->
 
-Results are reported by individual item. Exact wording of each item is provided before reporting the results. For the "where-to-meet" questions, results are reported separately by interpersonal context (stranger, student, friend).
-
-### Meeting Time
-
-
-### Meeting Locations
-
-
 
 ### Coin Flip
 
-```{r}
-#| label: coin-flip-data-prep
-
-coins <- raw_responses |> 
-    select(coin_same, coin_different) |> 
-    drop_na() |> 
-    pivot_longer(
-        cols = c(coin_same, coin_different), 
-        names_to = "goal", 
-        names_prefix = "coin_", 
-        values_to = "side") |> 
-    mutate(goal = fct_recode(goal, 'Choose same' = "same", 'Choose different' = "different") |> fct_rev())
-
-```
-
 You and an anonymous partner need to choose heads or tails.
 
-**Task 1:** If you both choose the _SAME_ answer, you both win. Which do you choose?
+**Task 1:** If you both choose the *SAME* answer, you both win. Which do you choose?
 
-**Task 2:** If you both choose _DIFFERENT_ answers, you both win. Which do you choose?
+**Task 2:** If you both choose *DIFFERENT* answers, you both win. Which do you choose?
 
 ```{r}
 #| label: tbl-coin-flip-results
@@ -259,27 +247,23 @@ You and an anonymous partner need to choose heads or tails.
 
 # Create simple proportional frequency table of results of coin flip tasks
 
-# 1) make the percent table
-coin_flip_tab <-
-  table(coins$side, coins$goal) |>
-  prop.table(margin = 2) |>
-  addmargins(margin = 1) |>
-  round(3) * 100
+prop_coins_tbl <- coins %>%
+  count(goal, side, name = "n") %>%
+  group_by(goal) %>%
+  mutate(pct = n / sum(n)) %>%
+  ungroup() %>%
+  select(goal, side, pct) %>%
+  pivot_wider(names_from = goal, values_from = pct, values_fill = 0)
 
-## STOP HERE FOR A SIMPLE, PRINTABLE PROPORTIONS TABLE
-## OR CONTINUE TO FORMAT AS A FLEXTABLE FOR PRETTIER MANUSCRIPT TABLES
-
-# 2) convert to a data frame for flextable
-coin_flip_df <- as.data.frame.matrix(coin_flip_tab)
-coin_flip_df <- rownames_to_column(coin_flip_df, "Side")
-
-# 3) print
-coin_flip_df |>
-  flextable() |>
-  colformat_num(j = -1, digits = 1, suffix = "%", big.mark = "")
+prop_coins_tbl %>%
+  gt(rowname_col = "side") %>%
+  fmt_percent(columns = everything(), decimals = 1) %>%
+  tab_header(
+    title = "Coin flip choices by goal condition",
+    subtitle = "Column-wise percentages (each goal sums to 100%)"
+  )
 
 ```
-
 
 ```{r}
 #| label: fig-coin-flip-filled-bar
@@ -294,25 +278,9 @@ ggplot(coins,
 
 ```
 
-
 When participants were prompted to choose the same answer as their partner, the responses were highly skewed: `r sum(coins$side == "Heads" & coins$goal == "Choose same")` out of `r sum(coins$goal == "Choose same")` (`r coin_flip_tab["Heads", "Choose same"]`%) chose heads. When participants were prompted to choose a different answer than their partner, the results were more balanced: `r sum(coins$side == "Heads" & coins$goal == "Choose different")` out of `r sum(coins$goal == "Choose different")` (`r coin_flip_tab["Heads", "Choose different"]`%) chose heads. These trends are in line with Schelling's original findings.
 
 ### Guessing a Number
-
-```{r}
-#| label: number-data-prep
-
-numbers <- raw_responses |> 
-    select(number_0_10, number_list, number_big) |> 
-    mutate(
-        # Convert the first 2 to ordered factors
-        number_0_10 = factor(number_0_10, ordered=T),
-        number_list = factor(number_list),
-        # Add a new factored version of the big number question
-        # to retain the free response text
-        number_big_fct = factor(number_big, ordered=T)) |> 
-    na.omit()
-```
 
 You and an anonymous partner must choose a number. In each scenario, you both win if you match your partner's number.
 
@@ -324,13 +292,11 @@ You and an anonymous partner must choose a number. In each scenario, you both wi
 
 ggplot(numbers, aes(x=number_0_10, fill=number_0_10)) + 
     geom_bar() +
-    #theme_minimal() +
     labs(#title="Match an anonymous partner: select 0-10",
          y=element_blank(),
          x=element_blank()) +
     theme(axis.text.x = element_text(size=24),
-          legend.position = "none") #+
-    #scale_fill_futurama()
+          legend.position = "none")
 ```
 
 ```{r}
@@ -349,20 +315,36 @@ choices_0_10 <- numbers$number_0_10 |>
 first_choice_0_10 <- choices_0_10 |>
     slice(1) # slice the first row to get the FIRST most common response
 
+first_is_7 <- first_choice_0_10$f[1] == "7" # check if the most common response is 7
+
 second_choice_0_10 <- choices_0_10 |>
     slice(2) # slice the first row to get the SECOND most common response
 
 ```
 
+```{r}
+#| label: numbers-text-create-is7
 
-<!-- TODO: add inline reporting of the most common responses and their proportions --> 
+# Create the markdown text that will generate if the first choice is 7
 
-In selecting from an incremental set of integers, participants most frequently chose the number 7 (...), which was also the most frequently chosen number in Schelling's original survey. This number is often cited as a classic example of a Schelling point, as it is the most salient option in this set of choices.
+text_7true <- str_glue("In selecting from an incremental set of integers, participants most frequently chose the number 7 ({first_choice_0_10$n} out of {total_responses_0_10} responses, {round(first_choice_0_10$n / total_responses_0_10 * 100, 1)}%). This number is often cited as a classic example of a Schelling point, as it is typically the most salient option in this set of choices, including in Schelling's own data.")
 
+# Create the markdown text that will generate if the first choice is NOT 7
 
-**Task 2:** Pick a number from the list^[Participants were presented with the following list of numbers in a randomized order: 
-`r levels(numbers$number_list)`.] below.
+text_7false <- str_glue("In selecting from an incremental set of integers, participants most frequently chose the number {first_choice_0_10$f} ({first_choice_0_10$n} out of {total_responses_0_10} responses, {round(first_choice_0_10$n / total_responses_0_10 * 100, 1)}%). This is counter to Schelling's original survey, where 7 was the most frequently chosen number.")
+```
 
+<!-- TODO: add inline reporting of the most common responses and their proportions -->
+
+<!-- If 7 is  most common, print text_7true, else text_7false -->
+
+`r if_else(first_is_7, text_7true, text_7false)`
+
+The second most common selection was `r str_glue("{second_choice_0_10$number_0_10} ({second_choice_0_10$n} out of {total_responses_0_10} responses, {round(second_choice_0_10$n / total_responses_0_10 * 100, 1)}%)")`.
+
+**Task 2:** Pick a number from the list[^2] below.
+
+[^2]: Participants were presented with the following list of numbers in a randomized order: `r levels(numbers$number_list)`.
 
 ```{r}
 #| label: fig-number-list-bar
@@ -379,8 +361,25 @@ ggplot(numbers, aes(x=number_list, fill=number_list)) +
     #scale_fill_futurama()
 ```
 
-
 **Task 3:** Pick any number. You win if you match your partner, *and* the bigger the number, the more you both win.
 
+```{r}
+#| label: fig-number-big-bar
+#| fig-cap: Distribution of responses to the 'pick any number' task.
 
+# factor(as.integer()) will throw a warning
+
+numbers |> 
+    filter(!is.na(number_big)) |> 
+    mutate(number_big = factor((number_big))) |> 
+ggplot(aes(x=number_big)) + 
+    geom_bar(aes(fill=factor((number_big)))) +
+    #geom_histogram(binwidth = 10) +
+    theme_minimal() +
+    labs(#title="Match an anonymous partner: the bigger the better",
+         y=element_blank(),
+         x=element_blank()) +
+    theme(axis.text.x = element_text(size=10, angle=90, hjust=1, vjust=0.5),
+          legend.position = "none") 
+```
 
